@@ -1,0 +1,34 @@
+﻿@model ThirdMVCStudy.Models.User
+@{
+    ViewBag.Title = "新增用户";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>新增用户（模型校验演示）</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+
+    <div>
+        @Html.LabelFor(m => m.Name)
+        @Html.TextBoxFor(m => m.Name)
+        <br />
+        @Html.ValidationMessageFor(m => m.Name)
+    </div>
+    <br />
+    <div>
+        @Html.LabelFor(m => m.Age)
+        @Html.TextBoxFor(m => m.Age)
+        <br />
+        @Html.ValidationMessageFor(m => m.Age)
+    </div>
+    <br />
+    <input type="submit" value="提交" />
+}
+
+@section Scripts{
+    <script>
+                console.log("新增页面脚本");
+    </script>
+}

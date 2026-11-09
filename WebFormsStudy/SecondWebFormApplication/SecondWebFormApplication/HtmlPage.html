@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+            var postData = {
+                Province: "广西",
+                Name: "南宁"
+            };
+            $.ajax({
+                url: "https://localhost:44302/api/city/add",
+                type: "POST",
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify(postData),
+                success: function (res) {
+                    console.log("成功", res);
+                },
+                error: function (err) {
+                    console.log("失败", err);
+                }
+            })
+    </script>
+</body>
+</html>

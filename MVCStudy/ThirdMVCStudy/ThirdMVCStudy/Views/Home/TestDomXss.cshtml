@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "DOM XSS测试";
+}
+<div id="show"></div>
+<script>
+// 读取url参数name
+function getUrlParam(key) {
+    let search = location.search.slice(1);
+    let arr = search.split('&');
+    for(let item of arr){
+        let kv = item.split('=');
+        if(kv[0] === key){
+            return kv[1];
+        }
+    }
+    return "";
+}
+let name = getUrlParam("name");
+// 危险：innerHTML 直接渲染，会执行脚本
+document.getElementById("show").innerHTML = name;
+
+// ✅ 安全写法：用textContent，只当文本，不解析HTML
+// document.getElementById("show").textContent = name;
+</script>

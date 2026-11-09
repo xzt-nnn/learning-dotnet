@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "文件上传测试";
+}
+<h3>文件上传</h3>
+@if (ViewBag.Msg != null)
+{
+    <p style="color:green">@ViewBag.Msg</p>
+}
+<form method="post" action="@Url.Action("Upload", "Upload")" enctype="multipart/form-data">
+    <input type="file" name="upFile" />
+    <button type="submit">上传</button>
+</form>

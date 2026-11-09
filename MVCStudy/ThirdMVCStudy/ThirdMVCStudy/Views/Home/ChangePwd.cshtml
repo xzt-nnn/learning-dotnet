@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "修改密码";
+}
+@if (ViewBag.Tip != null)
+{
+    <p style="color:green">@ViewBag.Tip</p>
+}
+<form method="post" action="@Url.Action("ChangePwd")">
+    @* 这一行必须写，生成隐藏的防伪token *@
+    @Html.AntiForgeryToken()
+
+    <div>新密码：<input type="text" name="newPwd" /></div>
+    <button type="submit">提交修改</button>
+</form>

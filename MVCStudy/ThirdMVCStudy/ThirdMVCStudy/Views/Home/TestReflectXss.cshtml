@@ -1,0 +1,9 @@
+﻿@{
+    ViewBag.Title = "反射型XSS测试";
+}
+<h3>用户输入内容：</h3>
+@* 安全写法：Razor @ 自动HTML编码，脚本不会执行 *@
+@*<p>安全输出：@ViewBag.Content</p>*@
+
+@* 危险写法：Html.Raw 关闭编码，会触发XSS！学习用，项目禁止随便写 *@
+ <p>危险输出：@Html.Raw(ViewBag.Content)</p> 

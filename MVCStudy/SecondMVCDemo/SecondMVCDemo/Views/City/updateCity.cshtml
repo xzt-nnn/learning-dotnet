@@ -1,0 +1,144 @@
+﻿﻿@model SecondMVCDemo.Models.City
+@{
+    Layout = null;
+    ViewBag.Title = "编辑城市";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewBag.Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            background-color: #f5f7fa;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 420px;
+            padding: 32px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        }
+
+            .card h2 {
+                margin-bottom: 22px;
+                font-size: 22px;
+                color: #2d3748;
+                text-align: center;
+            }
+
+        .form-item {
+            margin-bottom: 18px;
+        }
+
+            .form-item label {
+                display: block;
+                margin-bottom: 6px;
+                font-size: 14px;
+                color: #4a5568;
+            }
+
+        .input {
+            width: 100%;
+            padding: 10px 12px;
+            font-size: 14px;
+            border: 1px solid #cbd5e0;
+            border-radius: 6px;
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+            .input:focus {
+                border-color: #4a5568;
+                box-shadow: 0 0 0 3px rgba(74, 85, 104, 0.15);
+            }
+
+        .field-error {
+            display: block;
+            margin-top: 6px;
+            font-size: 13px;
+            color: #c53030;
+        }
+
+        .btn-row {
+            display: flex;
+            gap: 12px;
+            margin-top: 8px;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 11px 0;
+            font-size: 15px;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .btn-save {
+            color: #ffffff;
+            background-color: #4a5568;
+        }
+
+            .btn-save:hover {
+                background-color: #2d3748;
+            }
+
+        .btn-back {
+            color: #4a5568;
+            background-color: #edf2f7;
+        }
+
+            .btn-back:hover {
+                background-color: #e2e8f0;
+            }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>编辑城市</h2>
+
+        @using (Html.BeginForm("updateCity", "City", FormMethod.Post, new { @class = "city-form" }))
+        {
+            @Html.HiddenFor(m => m.Id)
+
+            <!-- 省份 -->
+            <div class="form-item">
+                <label>省份</label>
+                @Html.TextBoxFor(m => m.Province, new { @class = "input", placeholder = "请输入省份", required = "required", autocomplete = "off" })
+                @Html.ValidationMessageFor(m => m.Province, "", new { @class = "field-error" })
+            </div>
+
+            <!-- 城市名称 -->
+            <div class="form-item">
+                <label>城市名称</label>
+                @Html.TextBoxFor(m => m.Name, new { @class = "input", placeholder = "请输入城市名称", required = "required", autocomplete = "off" })
+                @Html.ValidationMessageFor(m => m.Name, "", new { @class = "field-error" })
+            </div>
+
+            <div class="btn-row">
+                <a class="btn btn-back" href="@Url.Action("CityList", "City")">返回列表</a>
+                <button type="submit" class="btn btn-save">保存修改</button>
+            </div>
+        }
+    </div>
+</body>
+</html>

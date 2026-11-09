@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div style="background:#333;color:#fff;padding:10px;">
+        【公共导航栏】 - ThirdMVCStudy
+    </div>
+
+    <div style="padding:20px;">
+        @RenderBody()
+    </div>
+
+    <div style="border-top:1px solid #999;padding:10px;margin-top:20px;">
+        公共底部版权信息
+    </div>
+
+    @*`@RenderSection` 就是占位符：去找子页面有没有定义名叫 `Scripts` 的 section，有就把里面内容放这里；没有就跳过*@
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

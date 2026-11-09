@@ -1,0 +1,14 @@
+@page "/test"
+@rendermode InteractiveServer
+@inject NavigationManager Navigation
+
+<button @onclick="NavigateToProductList">
+    Products
+</button>
+
+@code {
+    private void NavigateToProductList()
+    {
+        Navigation.NavigateTo("/products");
+    }
+}

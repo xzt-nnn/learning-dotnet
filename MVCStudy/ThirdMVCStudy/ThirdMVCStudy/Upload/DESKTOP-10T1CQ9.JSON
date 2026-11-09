@@ -1,0 +1,3000 @@
+{
+    "COMPUTER": {
+        "DESKTOP-10T1CQ9": {
+            "ScanTime": "27.10.2026 17:25",
+            "当前计算机": {
+                "计算机名": "DESKTOP-10T1CQ9",
+                "计算机品牌": "ASUS "
+            },
+            "操作系统": {
+                "操作系统": "Microsoft Windows 11 Enterprise LTSC (x64) Build 26100.1742 (24H2)",
+                "UEFI 启动": "存在",
+                "安全启动": "禁用",
+                "虚拟机监控程序保护的代码完整性 (HVCI)": "禁用"
+            }
+        }
+    },
+    "CPU": {
+        "中央处理器 (CPU)": {
+            "CPU 单元数量": {
+                "处理器封装的数量 (物理)": "1",
+                "处理器核心的数量": "6",
+                "逻辑处理器的数量": "12"
+            },
+            "AMD Ryzen 5 5600G": {
+                "常规信息": {
+                    "处理器名称": "AMD Ryzen 5 5600G",
+                    "原始处理器频率": "3900.0 MHz",
+                    "Original Processor Frequency [MHz]": "3900",
+                    "CPU ID": "00A50F00",
+                    "扩展 CPUID": "00A50F00",
+                    "CPU 品牌": "AMD Ryzen 5 5600G with Radeon Graphics",
+                    "CPU 供应商": "AuthenticAMD",
+                    "CPU 步进": "CZN-A0",
+                    "CPU 代号": "Cezanne",
+                    "CPU 技术": "7 nm",
+                    "CPU OPN": "100-000000252",
+                    "CPU 热设计功率 (TDP)": "65.0 W",
+                    "CPU 热设计电流 (TDC)": "限制: 65.0 A",
+                    "CPU 电气设计电流 (EDC)": "限制: 95.0 A",
+                    "CPU 封装功率追踪 (PPT)": "限制: 88.0 W",
+                    "APU STAPM (Skin Temperature-Aware Power Management) 限制": "65.0 W",
+                    "CPU 功率限制 PL1 (长时间)/处理器基本功率 (PBP)": "功率 = 88.00 W, 时间 = 5.00 sec [解除锁定]",
+                    "CPU 功率限制 PL2 (短时间)/最大睿频功率 (MTP)": "功率 = 88.00 W [解除锁定]",
+                    "CPU 最大结温 (Tj,max)": "95 ℃",
+                    "CPU PBO 标量 (可靠性降低)": "1.00x",
+                    "CPU 过热跳闸限制": "115.0 ℃",
+                    "CPU HTC 温度限制": "115.5 ℃",
+                    "CPU 平台": "AM4",
+                    "微码更新修订版": "A50000D",
+                    "SMU 固件修订版": "64.65.0",
+                    "核心性能顺序": "2, 1, 3, 4, 6, 5",
+                    "核心性能顺序 (CPPC)": "1, 2, 3, 4, 6, 5",
+                    "cLDO VDDP": "0.7514 V",
+                    "CPU 核心的数量": "6",
+                    "逻辑 CPU 的数量": "12"
+                },
+                "操作点": {
+                    "CPU 最低频率": "400.0 MHz = 4.00 x 100.0 MHz",
+                    "CPU 基本频率": "3900.0 MHz = 39.00 x 100.0 MHz",
+                    "CPU 最大睿频 (Fmax)": "4450.0 MHz = 44.50 x 100.0 MHz",
+                    "精准频率提升 (PBO) 频率限制": "4450.0 MHz = 44.50 x 100.0 MHz",
+                    "CPU 自动超频偏移": "0 MHz",
+                    "CPU 当前频率": "3553.6 MHz = 35.60 x 99.8 MHz @ 1.2500 V",
+                    "CPU 总线类型": "UMI"
+                },
+                "缓存和 TLB": {
+                    "一级缓存": "Instruction: 6 x 32 KiB, Data: 6 x 32 KiB",
+                    "二级缓存": "Integrated: 6 x 512 KiB",
+                    "三级缓存": "16 MiB",
+                    "指令 TLB": "Fully associative, 64 entries",
+                    "数据 TLB": "Fully associative, 64 entries"
+                },
+                "标准功能标志": {
+                    "FPU on Chip": "存在",
+                    "Enhanced Virtual-86 Mode": "存在",
+                    "I/O Breakpoints": "存在",
+                    "Page Size Extensions": "存在",
+                    "Time Stamp Counter": "存在",
+                    "Pentium-style Model Specific Registers": "存在",
+                    "Physical Address Extension": "存在",
+                    "Machine Check Exception": "存在",
+                    "CMPXCHG8B Instruction": "存在",
+                    "APIC On Chip / PGE (AMD)": "存在",
+                    "Fast System Call": "存在",
+                    "Memory Type Range Registers": "存在",
+                    "Page Global Feature": "存在",
+                    "Machine Check Architecture": "存在",
+                    "CMOV Instruction": "存在",
+                    "Page Attribute Table": "存在",
+                    "36-bit Page Size Extensions": "存在",
+                    "Processor Number": "不存在",
+                    "CLFLUSH Instruction": "存在",
+                    "Debug Trace and EMON Store": "不存在",
+                    "Internal ACPI Support": "不存在",
+                    "MMX Technology": "存在",
+                    "Fast FP Save/Restore (IA MMX-2)": "存在",
+                    "Streaming SIMD Extensions": "存在",
+                    "Streaming SIMD Extensions 2": "存在",
+                    "Self-Snoop": "不存在",
+                    "Multi-Threading Capable": "存在",
+                    "Automatic Clock Control": "不存在",
+                    "IA-64 Processor": "不存在",
+                    "Signal Break on FERR": "不存在",
+                    "Streaming SIMD Extensions 3": "存在",
+                    "PCLMULQDQ Instruction Support": "存在",
+                    "MONITOR/MWAIT Support": "存在",
+                    "Supplemental Streaming SIMD Extensions 3": "存在",
+                    "FMA Extension": "存在",
+                    "CMPXCHG16B Support": "存在",
+                    "Streaming SIMD Extensions 4.1": "存在",
+                    "Streaming SIMD Extensions 4.2": "存在",
+                    "x2APIC": "存在",
+                    "POPCNT Instruction": "存在",
+                    "AES Cryptography Support": "存在",
+                    "XSAVE/XRSTOR/XSETBV/XGETBV Instructions": "存在",
+                    "XGETBV/XSETBV OS Enabled": "存在",
+                    "AVX Support": "存在",
+                    "Half-Precision Convert (CVT16)": "存在"
+                },
+                "扩展功能标志": {
+                    "FPU on Chip": "存在",
+                    "Enhanced Virtual-86 Mode": "存在",
+                    "I/O Breakpoints": "存在",
+                    "Page Size Extensions": "存在",
+                    "Time Stamp Counter": "存在",
+                    "AMD-style Model Specific Registers": "存在",
+                    "Machine Check Exception": "存在",
+                    "CMPXCHG8B Instruction": "存在",
+                    "APIC On Chip": "存在",
+                    "SYSCALL and SYSRET Instructions": "存在",
+                    "Memory Type Range Registers": "存在",
+                    "Page Global Feature": "存在",
+                    "Machine Check Architecture": "存在",
+                    "CMOV Instruction": "存在",
+                    "Page Attribute Table": "存在",
+                    "36-bit Page Size Extensions": "存在",
+                    "Multi-Processing / Brand feature": "不存在",
+                    "No Execute": "存在",
+                    "MMX Technology": "存在",
+                    "MMX+ Extensions": "存在",
+                    "Fast FP Save/Restore": "存在",
+                    "Fast FP Save/Restore Optimizations": "存在",
+                    "1 GB large page support": "存在",
+                    "RDTSCP Instruction": "存在",
+                    "x86-64 Long Mode": "存在",
+                    "3DNow! Technology Extensions": "不存在",
+                    "3DNow! Technology": "不存在",
+                    "Bit Manipulation Instructions Set 1": "存在",
+                    "Bit Manipulation Instructions Set 2": "存在",
+                    "Advanced Vector Extensions 2 (AVX2)": "存在",
+                    "Advanced Vector Extensions 512 (AVX-512) Foundation": "不存在",
+                    "AVX-512 Prefetch Instructions": "不存在",
+                    "AVX-512 Exponential and Reciprocal Instructions": "不存在",
+                    "AVX-512 Conflict Detection Instructions": "不存在",
+                    "AVX-512 Doubleword and Quadword Instructions": "不存在",
+                    "AVX-512 Byte and Word Instructions": "不存在",
+                    "AVX-512 Vector Length Extensions": "不存在",
+                    "AVX-512 52-bit Integer FMA Instructions": "不存在",
+                    "Secure Hash Algorithm (SHA) Extensions": "存在",
+                    "Software Guard Extensions (SGX) Support": "不存在",
+                    "Supervisor Mode Execution Protection (SMEP)": "存在",
+                    "Supervisor Mode Access Prevention (SMAP)": "存在",
+                    "Hardware Lock Elision (HLE)": "不存在",
+                    "Restricted Transactional Memory (RTM)": "不存在",
+                    "Memory Protection Extensions (MPX)": "不存在",
+                    "Read/Write FS/GS Base Instructions": "存在",
+                    "Enhanced Performance String Instruction": "存在",
+                    "INVPCID Instruction": "存在",
+                    "RDSEED Instruction": "存在",
+                    "Multi-precision Add Carry Instructions (ADX)": "存在",
+                    "PCOMMIT Instructions": "不存在",
+                    "CLFLUSHOPT Instructions": "存在",
+                    "CLWB Instructions": "存在",
+                    "Time-Stamp Counter Adjustment": "不存在",
+                    "Platform Quality of Service Monitoring (PQM)": "存在",
+                    "Platform Quality of Service Enforcement (PQE)": "存在",
+                    "FPU Data Pointer updated only on x87 Exceptions": "不存在",
+                    "Deprecated FPU CS and FPU DS": "不存在",
+                    "Intel Processor Trace": "不存在",
+                    "PREFETCHWT1 Instruction": "不存在",
+                    "AVX-512 Vector Bit Manipulation Instructions": "不存在",
+                    "AVX-512 Vector Bit Manipulation Instructions 2": "不存在",
+                    "AVX-512 Galois Fields New Instructions": "不存在",
+                    "AVX-512 Vector AES": "存在",
+                    "AVX-512 Vector Neural Network Instructions": "不存在",
+                    "AVX-512 Bit Algorithms": "不存在",
+                    "AVX-512 Carry-Less Multiplication Quadword (VPCLMULQDQ)": "存在",
+                    "AVX-512 Vector POPCNT (VPOPCNTD/VPOPCNTQ)": "不存在",
+                    "User-Mode Instruction Prevention": "存在",
+                    "Protection Keys for User-mode Pages": "存在",
+                    "OS Enabled Protection Keys": "不存在",
+                    "Wait and Pause Enhancements (WAITPKG)": "不存在",
+                    "Total Memory Encryption": "不存在",
+                    "Key Locker": "不存在",
+                    "57-bit Linear Addresses, 5-level Paging": "不存在",
+                    "Read Processor ID": "存在",
+                    "OS Bus-Lock Detection": "不存在",
+                    "Cache Line Demote": "不存在",
+                    "MOVDIRI: Direct Stores": "不存在",
+                    "MOVDIR64B: Direct Stores": "不存在",
+                    "ENQCMD: Enqueue Stores": "不存在",
+                    "SGX Launch Configuration": "不存在",
+                    "Protection Keys for Supervisor-Mode Pages": "不存在",
+                    "Control-Flow Enforcement Technology (CET) Shadow Stack": "存在",
+                    "Attestation Services for Intel SGX": "不存在",
+                    "AVX-512 4 x Vector Neural Network Instructions Word Variable Precision": "不存在",
+                    "AVX-512 4 x Fused Multiply Accumulation Packed Single Precision": "不存在",
+                    "Fast Short REP MOV": "存在",
+                    "User Interrupts": "不存在",
+                    "AVX-512 VP2INTERSECT Support": "不存在",
+                    "AVX-512 FP16": "不存在",
+                    "MD_CLEAR Support": "不存在",
+                    "IA32_MCU_OPT_CTRL MSR Support": "不存在",
+                    "Restricted Transactional Memory (RTM) Always Abort": "不存在",
+                    "Restricted Transactional Memory (RTM) Force Abort": "不存在",
+                    "SERIALIZE": "不存在",
+                    "Hybrid Processor": "不存在",
+                    "TSX Suspend Load Address Tracking": "不存在",
+                    "Platform Configuration (PCONFIG)": "不存在",
+                    "Architectural LBRs": "不存在",
+                    "Indirect Branch Restricted Speculation (IBRS), Indirect Branch Predictor Barrier (IBPB)": "不存在",
+                    "Single Thread Indirect Branch Predictors (STIBP)": "不存在",
+                    "L1D_FLUSH Support": "不存在",
+                    "IA32_ARCH_CAPABILITIES MSR": "不存在",
+                    "IA32_CORE_CAPABILITIES MSR": "不存在",
+                    "Speculative Store Bypass Disable (SSBD)": "不存在",
+                    "Control-Flow Enforcement Technology (CET) Indirect Branch Tracking": "不存在",
+                    "Advanced Matrix Extensions (AMX) Tile Architecture": "不存在",
+                    "Advanced Matrix Extensions (AMX) bfloat16 Support": "不存在",
+                    "Advanced Matrix Extensions (AMX) 8-bit Integer Operations": "不存在",
+                    "SHA512 Instructions": "不存在",
+                    "SM3 Instructions": "不存在",
+                    "SM4 Instructions": "不存在",
+                    "Advanced Matrix Extensions (AMX) FP16 Instructions": "不存在",
+                    "AVX (VEX-encoded) Vector Neural Network Instructions": "不存在",
+                    "AVX-512 BFLOAT16 Instructions": "不存在",
+                    "Fast Zero-Length MOVSB": "不存在",
+                    "Fast Short STOSB": "不存在",
+                    "Fast Short CMPSB, SCASB": "不存在",
+                    "History Reset": "不存在",
+                    "Linear Address Masking": "不存在",
+                    "Linear Address Space Separation": "不存在",
+                    "RAO-INT Instructions": "不存在",
+                    "CMPccXADD Instructions": "不存在",
+                    "Flexible Return and Event Delivery (FRED)": "不存在",
+                    "LKGS Instruction": "不存在",
+                    "WRMSRNS Instruction": "不存在",
+                    "NMI-source Reporting": "不存在",
+                    "AVX-IFMA Instructions": "不存在",
+                    "RD/WR MSRLIST Instructions": "不存在",
+                    "INVD Execution Prevention After BIOS-Done": "不存在",
+                    "Move Read-Shared Value (MOVRS)": "不存在",
+                    "Protected Processor Inventory Number (IA32_PPIN) Support": "不存在",
+                    "PBNDKB Instruction": "不存在",
+                    "Asymmetrical Intel RDT Monitoring capability": "不存在",
+                    "Asymmetrical Intel RDT Allocation capability": "不存在",
+                    "X86S (Legacy-reduced OS ISA)": "不存在",
+                    "64-bit SIPI": "不存在",
+                    "RDMSR/WRMSR Immediate Forms": "不存在",
+                    "AVX-VNNI-INT8 Instructions": "不存在",
+                    "AVX-VNNI-INT16 Instructions": "不存在",
+                    "AVX-NE-CONVERT Instructions": "不存在",
+                    "PREFETCHIT0/1 Instructions": "不存在",
+                    "URDMSR/UWRMSR Instructions": "不存在",
+                    "AMX-COMPLEX Instructions": "不存在",
+                    "CET Supervisor Shadow-Stack": "不存在",
+                    "UIRET Support": "不存在",
+                    "User-Timer Events": "不存在",
+                    "MWAIT Instruction": "不存在",
+                    "Static Lockstep Mode": "不存在",
+                    "Trusted Execution Environment Attestation Rooted in Security Engine": "不存在",
+                    "Advanced Vector Extensions 10 (AVX10)": "不存在",
+                    "Advanced Performance Extensions (APX) Foundation": "不存在",
+                    "Not Exhibiting MXCSR Configuration Dependent Timing (MCDT)": "不存在",
+                    "UC-Lock Disable Feature": "不存在",
+                    "LAHF/SAHF Long Mode Support": "存在",
+                    "Core Multi-Processing Legacy Mode": "存在",
+                    "Secure Virtual Machine": "存在",
+                    "Extended APIC Register Space": "存在",
+                    "LOCK MOV CR0 Support": "存在",
+                    "Advanced Bit Manipulation": "存在",
+                    "SSE4A Support": "存在",
+                    "Misaligned SSE Mode": "存在",
+                    "PREFETCH(W) Support": "存在",
+                    "OS Visible Work-around Support": "存在",
+                    "Instruction Based Sampling": "存在",
+                    "XOP Instruction Support": "不存在",
+                    "SKINIT, STGI, and DEV Support": "存在",
+                    "Watchdog Timer Support": "存在",
+                    "TBM0 Instruction Support": "不存在",
+                    "Lightweight Profiling Support": "不存在",
+                    "FMA4 Instruction Support": "不存在",
+                    "Translation Cache Extension": "存在",
+                    "NodeId Support": "不存在",
+                    "Trailing Bit Manipulation": "不存在",
+                    "Topology Extensions": "存在",
+                    "Core Performance Counter Extensions": "存在",
+                    "NB Performance Counter Extensions": "存在",
+                    "Streaming Performance Monitor Architecture": "不存在",
+                    "Data Breakpoint Extension": "存在",
+                    "Performance Time-Stamp Counter": "不存在",
+                    "L2I Performance Counter Extensions": "存在",
+                    "MWAITX/MONITORX Support": "存在",
+                    "安全内存加密 (SME)": "存在",
+                    "安全加密虚拟化 (SEV)": "存在"
+                },
+                "增强功能": {
+                    "Core Performance Boost": "支持, 启用"
+                },
+                "内存范围": {
+                    "最大物理地址大小": "48位 (256 TiB)",
+                    "最大虚拟地址大小": "48位 (256 TiB)"
+                },
+                "内存类型范围寄存器": {
+                    "Range 0-80000000 (0MB-2048MB) Type": "Write Back (WB)",
+                    "Range 80000000-C0000000 (2048MB-3072MB) Type": "Write Back (WB)",
+                    "Range C0000000-D0000000 (3072MB-3328MB) Type": "Write Back (WB)"
+                }
+            }
+        }
+    },
+    "MOBO": {
+        "主板": {
+            "计算机": {
+                "计算机品牌": "ASUS "
+            },
+            "主板": {
+                "主板型号": "ASUS PRIME A520M-K",
+                "主板芯片组": "AMD A520 (Promontory PROM19 A)",
+                "主板插槽": "4xPCI Express x1, 2xPCI Express x4, 1xPCI Express x16",
+                "支持的 PCI Express 版本": "v3.0",
+                "支持的 USB 版本": "v3.1"
+            },
+            "BIOS": {
+                "BIOS 制造商": "American Megatrends Inc.",
+                "BIOS 日期 (月/日/年)": "02/24/2023",
+                "BIOS 版本": "3002",
+                "UEFI BIOS": "支持",
+                "ACPI Version": "6.2",
+                "超级 IO/LPC 芯片": "Nuvoton NCT6798D",
+                "受信任的平台模块 (TPM) 芯片": "Hardware TPM, version 2.0"
+            },
+            "ACPI Devices": {
+                "AMD GPIO Controller": {
+                    "设备名称": [
+                        "AMD GPIO Controller",
+                        "AMD GPIO Controller"
+                    ],
+                    "分配的资源": {
+                        "IRQ": "7",
+                        "内存地址": "FEC30000 - FEC30FFF"
+                    },
+                    "Alternative 1": {
+                        "内存地址": [
+                            "FED81500",
+                            "FED81200 - FED812FF",
+                            "FEC30000 - FEC30FFF"
+                        ],
+                        "IRQ": "7"
+                    }
+                },
+                "Trusted Platform Module 2.0": {
+                    "设备名称": "Trusted Platform Module 2.0",
+                    "分配的资源": {
+                        "内存地址": "C3CB9000 - C3CBCFFF"
+                    },
+                    "Alternative 1": {
+                        "内存地址": [
+                            "C3CB9000 - C3CBCFFF",
+                            "C3CBD000 - C3CC0FFF"
+                        ]
+                    }
+                },
+                "Programmable interrupt controller": {
+                    "设备名称": "Programmable interrupt controller",
+                    "分配的资源": {
+                        "I/O 端口": "0020 - 0021",
+                        "IRQ": "65792"
+                    },
+                    "Alternative 1": {
+                        "I/O 端口": [
+                            "0020 - 0021",
+                            "00A0 - 00A1"
+                        ]
+                    }
+                },
+                "System timer": {
+                    "设备名称": "System timer",
+                    "分配的资源": {
+                        "I/O 端口": "0040 - 0043"
+                    },
+                    "Alternative 1": {
+                        "I/O 端口": "0040 - 0043",
+                        "IRQ": "0"
+                    }
+                },
+                "High precision event timer": {
+                    "设备名称": "High precision event timer",
+                    "分配的资源": {
+                        "IRQ": "0"
+                    },
+                    "Alternative 1": {
+                        "内存地址": "FED00000",
+                        "IRQ": [
+                            "0",
+                            "8"
+                        ]
+                    }
+                },
+                "Direct memory access controller": {
+                    "设备名称": "Direct memory access controller",
+                    "分配的资源": {
+                        "I/O 端口": "0089 - 008B",
+                        "DMA": "4"
+                    },
+                    "Alternative 1": {
+                        "I/O 端口": [
+                            "0000 - 000F",
+                            "0081 - 0083",
+                            "0087",
+                            "0089 - 008B",
+                            "008F",
+                            "00C0 - 00DF"
+                        ],
+                        "DMA": "4"
+                    }
+                },
+                "通信端口": {
+                    "设备名称": "通信端口",
+                    "分配的资源": {
+                        "I/O 端口": "03F8 - 03FF"
+                    },
+                    "Alternative 1": {
+                        "I/O 端口": "03F8 - 03FF",
+                        "IRQ": "4"
+                    },
+                    "Alternative 2": {
+                        "I/O 端口": "03F8 - 03FF",
+                        "IRQ": "4"
+                    },
+                    "Alternative 3": {
+                        "I/O 端口": "02F8 - 02FF",
+                        "IRQ": "3"
+                    },
+                    "Alternative 4": {
+                        "I/O 端口": "03E8 - 03EF",
+                        "IRQ": "4"
+                    },
+                    "Alternative 5": {
+                        "I/O 端口": "02E8 - 02EF",
+                        "IRQ": "3"
+                    }
+                },
+                "System speaker": {
+                    "设备名称": "System speaker",
+                    "分配的资源": {
+                        "I/O 端口": "0061"
+                    },
+                    "Alternative 1": {
+                        "I/O 端口": "0061"
+                    }
+                },
+                "PCI Express Root Complex": {
+                    "设备名称": "PCI Express Root Complex",
+                    "分配的资源": {
+                        "I/O 端口": [
+                            "0000 - FFFFFFFF",
+                            "03B0 - 03DF"
+                        ],
+                        "内存地址": [
+                            "000A0000 - 0009FFFF",
+                            "D0000000 - FEC2FFFF"
+                        ]
+                    },
+                    "Alternative 1": {
+                        "I/O 端口": [
+                            "0000 - 03AF",
+                            "03E0 - 0CF7",
+                            "03B0 - 03DF",
+                            "0D00 - FFFF"
+                        ],
+                        "内存地址": [
+                            "000A0000 - 000BFFFF",
+                            "000C0000 - 000DFFFF",
+                            "D0000000 - FEC2FFFF",
+                            "FEE00000 - FFFFFFFF"
+                        ]
+                    }
+                },
+                "System CMOS/real time clock": {
+                    "设备名称": "System CMOS/real time clock",
+                    "分配的资源": {
+                        "I/O 端口": "0070 - 0071"
+                    },
+                    "Alternative 1": {
+                        "I/O 端口": "0070 - 0071"
+                    }
+                },
+                "System board": {
+                    "设备名称": "System board",
+                    "分配的资源": {
+                        "内存地址": "F0000000 - F7FFFFFF"
+                    },
+                    "Alternative 1": {
+                        "内存地址": "F0000000 - F7FFFFFF"
+                    }
+                },
+                "Motherboard resources": {
+                    "设备名称": [
+                        "Motherboard resources",
+                        "Motherboard resources",
+                        "Motherboard resources",
+                        "Motherboard resources",
+                        "Motherboard resources"
+                    ],
+                    "分配的资源": {
+                        "I/O 端口": [
+                            "0290 - 029F",
+                            "0010 - 001F",
+                            "0067 - 006F",
+                            "0088",
+                            "00B1",
+                            "04D6",
+                            "0C52",
+                            "0000 - 0C6E",
+                            "0800 - 089F",
+                            "0910 - 091F"
+                        ],
+                        "内存地址": [
+                            "10000000 - 2FFFFFFF",
+                            "FEB80000 - FEBFFFFF",
+                            "FD200000 - FD2FFFFF",
+                            "00000000 - 0000008F"
+                        ],
+                        "IRQ": "1114369"
+                    },
+                    "Alternative 1": {
+                        "I/O 端口": [
+                            "0290 - 029F",
+                            "0200 - 021F",
+                            "0010 - 001F",
+                            "0022 - 003F",
+                            "0063",
+                            "0065",
+                            "0067 - 006F",
+                            "0072 - 007F",
+                            "0080",
+                            "0084 - 0086",
+                            "0088",
+                            "008C - 008E",
+                            "0090 - 009F",
+                            "00A2 - 00BF",
+                            "00B1",
+                            "00E0 - 00EF",
+                            "04D0 - 04D1",
+                            "040B",
+                            "04D6",
+                            "0C00 - 0C01",
+                            "0C14",
+                            "0C50 - 0C51",
+                            "0C52",
+                            "0C6C",
+                            "0C6F",
+                            "0CD8 - 0CDF",
+                            "0800 - 089F",
+                            "0B00 - 0B0F",
+                            "0B20 - 0B3F",
+                            "0900 - 090F",
+                            "0910 - 091F"
+                        ],
+                        "内存地址": [
+                            "10000000 - 2FFFFFFF",
+                            "FEB80000 - FEBFFFFF",
+                            "FD200000 - FD2FFFFF",
+                            "FEC00000 - FEC00FFF",
+                            "FEC01000 - FEC01FFF",
+                            "FEDC0000",
+                            "FEE00000",
+                            "FED80000 - FED8FFFF",
+                            "FEC10000 - FEC10FFF",
+                            "FF000000"
+                        ]
+                    }
+                }
+            },
+            "SMBIOS DMI": {
+                "BIOS": {
+                    "BIOS 制造商": "American Megatrends Inc.",
+                    "BIOS 版本": "3002",
+                    "BIOS 发布日期 (月/日/年)": "02/24/2023",
+                    "BIOS 启动段": "F000",
+                    "BIOS 大小": "16 MiB",
+                    "系统 BIOS 版本": "5.17",
+                    "ISA Support": "不存在",
+                    "MCA Support": "不存在",
+                    "EISA Support": "不存在",
+                    "PCI Support": "存在",
+                    "PC Card (PCMCIA) Support": "不存在",
+                    "Plug-and-Play Support": "不存在",
+                    "APM Support": "存在",
+                    "Flash BIOS": "存在",
+                    "BIOS Shadow": "存在",
+                    "VL-VESA Support": "不存在",
+                    "ESCD Support": "不存在",
+                    "Boot from CD": "存在",
+                    "Selectable Boot": "存在",
+                    "BIOS ROM Socketed": "存在",
+                    "Boot from PC Card": "不存在",
+                    "EDD Support": "存在",
+                    "NEC PC-98 Support": "不存在",
+                    "ACPI Support": "存在",
+                    "USB Legacy Support": "存在",
+                    "AGP Support": "不存在",
+                    "I2O Boot Support": "不存在",
+                    "LS-120 Boot Support": "不存在",
+                    "ATAPI ZIP Drive Boot Support": "不存在",
+                    "IEE1394 Boot Support": "不存在",
+                    "Smart Battery Support": "不存在",
+                    "BIOS Boot Specification Support": "存在",
+                    "Function key-initiated Network Service Boot Support": "不存在",
+                    "Targeted Content Distribution Support": "存在",
+                    "UEFI Specification Support": "存在",
+                    "Virtual Machine": "不存在"
+                },
+                "系统": {
+                    "系统制造商": "ASUS",
+                    "产品名称": "System Product Name",
+                    "产品版本": "System Version",
+                    "产品序号": "System Serial Number",
+                    "UUID": "{7A82C688-CCA2-225C-B63F-08BFB81A2CF8}",
+                    "SKU Number": "SKU",
+                    "Family": "To be filled by O.E.M."
+                },
+                "主板": {
+                    "主板制造商": "ASUSTeK COMPUTER INC.",
+                    "主板名称": "PRIME A520M-K",
+                    "主板版本": "Rev X.0x",
+                    "主板序号": "230418919606138",
+                    "资产标签": "",
+                    "在机箱中的位置": ""
+                },
+                "系统机箱": {
+                    "制造商": "",
+                    "机箱类型": "Desktop",
+                    "版本": "",
+                    "序号": "",
+                    "资产标签编号": ""
+                },
+                "板载设备": {
+                    "设备描述": [
+                        "   To Be Filled By O.E.M.",
+                        " Onboard IGD"
+                    ],
+                    "设备类型": [
+                        "Video Adapter",
+                        "Video Adapter"
+                    ],
+                    "设备状态": [
+                        "启用",
+                        "启用"
+                    ],
+                    "Base Segment:Bus:Device:Function Number": "0:0:2:0"
+                },
+                "OEM 字符串": [
+                    "Default string",
+                    "Default string",
+                    "WHALE",
+                    "Default string",
+                    "Default string",
+                    "Default string",
+                    "Default string",
+                    "Default string"
+                ],
+                "系统配置选项": [
+                    "Default string",
+                    "Default string",
+                    "Default string",
+                    "Default string"
+                ],
+                "系统启动信息": {
+                    "启动状态": "没有发生错误"
+                },
+                "管理设备": {
+                    "设备描述": "NCT6798D-R",
+                    "设备类型": "Unknown",
+                    "Device Address": "I/O: 295"
+                },
+                "Additional Information": [
+                    "To Be Filled By O.E.M. 1",
+                    "Mordor 2",
+                    "PRODUCT_LINE",
+                    "PRODUCT_SKU"
+                ],
+                "处理器附加信息": {
+                    "固件组件名称": "\u0011\\/",
+                    "Firmware Manufacturer": "",
+                    "固件版本": "\u0011\\/",
+                    "固件发布日期": ""
+                },
+                "TPM": {
+                    "TPM 规范版本": "2.0",
+                    "TPM 供应商": "AMD",
+                    "TPM 描述": "AMD"
+                },
+                "L1 - 缓存": {
+                    "插座名称": "L1 - Cache",
+                    "缓存状态": "启用",
+                    "缓存位置": "内部",
+                    "缓存类型": "L1 Unified",
+                    "缓存方案": "Write-Back",
+                    "支持 SRAM 类型": "Pipeline Burst",
+                    "当前 SRAM 类型": "Pipeline Burst",
+                    "缓存速度": "1 ns",
+                    "纠错类型": "Multi-bit ECC",
+                    "最大缓存大小": "384 KiB",
+                    "安装缓存大小": "384 KiB",
+                    "缓存关联性": "8-way Set-Associative"
+                },
+                "L2 - 缓存": {
+                    "插座名称": "L2 - Cache",
+                    "缓存状态": "启用",
+                    "缓存位置": "内部",
+                    "缓存类型": "L2 Unified",
+                    "缓存方案": "Write-Back",
+                    "支持 SRAM 类型": "Pipeline Burst",
+                    "当前 SRAM 类型": "Pipeline Burst",
+                    "缓存速度": "1 ns",
+                    "纠错类型": "Multi-bit ECC",
+                    "最大缓存大小": "3072 KiB",
+                    "安装缓存大小": "3072 KiB",
+                    "缓存关联性": "8-way Set-Associative"
+                },
+                "L3 - 缓存": {
+                    "插座名称": "L3 - Cache",
+                    "缓存状态": "启用",
+                    "缓存位置": "内部",
+                    "缓存类型": "L3 Unified",
+                    "缓存方案": "Write-Back",
+                    "支持 SRAM 类型": "Pipeline Burst",
+                    "当前 SRAM 类型": "Pipeline Burst",
+                    "缓存速度": "1 ns",
+                    "纠错类型": "Multi-bit ECC",
+                    "最大缓存大小": "16384 KiB",
+                    "安装缓存大小": "16384 KiB",
+                    "缓存关联性": "16-way Set-Associative"
+                },
+                "处理器": {
+                    "处理器制造商": "Advanced Micro Devices, Inc.",
+                    "处理器版本": "AMD Ryzen 5 5600G with Radeon Graphics         ",
+                    "外部频率": "100 MHz",
+                    "支持的最大频率": "4450 MHz",
+                    "当前频率": "3900 MHz",
+                    "CPU 插座": "已填充",
+                    "CPU 状态": "启用",
+                    "处理器类型": "中央处理器",
+                    "处理器电压": "1.4 V",
+                    "处理器升级": "Socket AM4",
+                    "插座名称": "AM4"
+                },
+                "BIOS 语言": [
+                    "en|US|iso8859-1",
+                    "fr|FR|iso8859-1",
+                    "zh|TW|unicode",
+                    "zh|CN|unicode <Active>",
+                    "ja|JP|unicode",
+                    "de|DE|iso8859-1",
+                    "es|ES|iso8859-1",
+                    "ru|RU|iso8859-5",
+                    "ko|KR|unicode"
+                ],
+                "内存设备": {
+                    "物理内存阵列": {
+                        "阵列位置": "System board",
+                        "阵列用途": "System memory",
+                        "错误检测方法": "无",
+                        "内存容量": "128 GiB",
+                        "内存设备": "2"
+                    },
+                    "内存阵列映射地址": {
+                        "起始地址": "00000000",
+                        "结束地址": "01FFFFFF",
+                        "分区宽度": "1"
+                    },
+                    "内存设备": {
+                        "总位宽": [
+                            "64 bits",
+                            "未知"
+                        ],
+                        "数据位宽": [
+                            "64 bits",
+                            "未知"
+                        ],
+                        "设备大小": [
+                            "32768 MiB",
+                            "0 MiB"
+                        ],
+                        "设备外形规格": [
+                            "DIMM",
+                            "未知"
+                        ],
+                        "设备定位": [
+                            "DIMM_A1",
+                            "DIMM_B1"
+                        ],
+                        "Bank 定位": [
+                            "BANK 0",
+                            "BANK 1"
+                        ],
+                        "设备类型": [
+                            "DDR4",
+                            "Unknown"
+                        ],
+                        "设备类型详细信息": [
+                            "Synchronous",
+                            ""
+                        ],
+                        "内存速度": "2400 MT/s",
+                        "Configured Memory Speed": "2400 MT/s",
+                        "制造商": [
+                            "CUSO",
+                            "Unknown"
+                        ],
+                        "序号": [
+                            "D4322377",
+                            "Unknown"
+                        ],
+                        "部件号": [
+                            "VCM4UX32C18BG-SYXXD",
+                            "Unknown"
+                        ],
+                        "资产标签": [
+                            "",
+                            ""
+                        ],
+                        "Volatile Size": "32 GiB"
+                    },
+                    "内存设备映射地址": {
+                        "起始地址": "00000000",
+                        "结束地址": "01FFFFFF",
+                        "Partition Row Position": "未知",
+                        "Interleave Position": "未知",
+                        "Interleave Data Depth": "未知"
+                    }
+                },
+                "接口": {
+                    "Video Port": {
+                        "端口类型": [
+                            "Video Port",
+                            "Video Port"
+                        ],
+                        "内部参考": [
+                            "VGA",
+                            "HDMI"
+                        ],
+                        "内部接口类型": [
+                            "无",
+                            "无"
+                        ],
+                        "外部参考": [
+                            "VGA port",
+                            "HDMI port"
+                        ],
+                        "外部接口类型": [
+                            "未知",
+                            "未知"
+                        ]
+                    },
+                    "Keyboard Port": {
+                        "端口类型": "Keyboard Port",
+                        "内部参考": "PS/2 Keyboard/Mouse",
+                        "内部接口类型": "无",
+                        "外部参考": "PS/2 Keyboard/Mouse",
+                        "外部接口类型": "PS/2"
+                    },
+                    "USB": {
+                        "端口类型": [
+                            "USB",
+                            "USB",
+                            "USB",
+                            "USB",
+                            "USB",
+                            "USB"
+                        ],
+                        "内部参考": [
+                            "USB_56",
+                            "U32G1_34",
+                            "U32G1_56",
+                            "USB_12",
+                            "USB_34",
+                            "U32G1_12"
+                        ],
+                        "内部接口类型": [
+                            "无",
+                            "无",
+                            "无",
+                            "Access Bus (USB)",
+                            "Access Bus (USB)",
+                            "Access Bus (USB)"
+                        ],
+                        "外部参考": [
+                            "USB_56",
+                            "U32G1_34",
+                            "U32G1_56",
+                            "",
+                            "",
+                            ""
+                        ],
+                        "外部接口类型": [
+                            "Access Bus (USB)",
+                            "Access Bus (USB)",
+                            "Access Bus (USB)",
+                            "无",
+                            "无",
+                            "无"
+                        ]
+                    },
+                    "Network Port": {
+                        "端口类型": "Network Port",
+                        "内部参考": "LAN",
+                        "内部接口类型": "无",
+                        "外部参考": "LAN",
+                        "外部接口类型": "RJ-45"
+                    },
+                    "SATA": {
+                        "端口类型": [
+                            "SATA",
+                            "SATA",
+                            "SATA",
+                            "SATA",
+                            "SATA"
+                        ],
+                        "内部参考": [
+                            "SATA6G_1",
+                            "SATA6G_2",
+                            "SATA6G_3",
+                            "SATA6G_4",
+                            "M.2(SOCKET3)"
+                        ],
+                        "内部接口类型": [
+                            "SAS/SATA Plug Receptacle",
+                            "SAS/SATA Plug Receptacle",
+                            "SAS/SATA Plug Receptacle",
+                            "SAS/SATA Plug Receptacle",
+                            "SAS/SATA Plug Receptacle"
+                        ],
+                        "外部参考": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        "外部接口类型": [
+                            "无",
+                            "无",
+                            "无",
+                            "无",
+                            "无"
+                        ]
+                    },
+                    "接口": {
+                        "端口类型": [
+                            "未知",
+                            "未知",
+                            "未知",
+                            "未知",
+                            "未知",
+                            "未知"
+                        ],
+                        "内部参考": [
+                            "CPU_FAN",
+                            "CHA_FAN",
+                            "PANEL",
+                            "TPM",
+                            "SPDIF_OUT",
+                            "SPEAKER"
+                        ],
+                        "内部接口类型": [
+                            "未知",
+                            "未知",
+                            "未知",
+                            "未知",
+                            "未知",
+                            "未知"
+                        ],
+                        "外部参考": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        "外部接口类型": [
+                            "无",
+                            "无",
+                            "无",
+                            "无",
+                            "无",
+                            "无"
+                        ]
+                    },
+                    "Audio Port": {
+                        "端口类型": "Audio Port",
+                        "内部参考": "AAFP",
+                        "内部接口类型": "Mini-jack (headphones)",
+                        "外部参考": "",
+                        "外部接口类型": "无"
+                    },
+                    "Serial Port 16550A Compatible": {
+                        "端口类型": "Serial Port 16550A Compatible",
+                        "内部参考": "COM",
+                        "内部接口类型": "DB-9 pin male",
+                        "外部参考": "",
+                        "外部接口类型": "无"
+                    }
+                },
+                "系统插槽": {
+                    "PCIEX16_1": {
+                        "插槽名称": "PCIEX16_1",
+                        "插槽类型": "PCI Express x16",
+                        "插槽使用": "空",
+                        "插槽数据总线位宽": "16x / x16",
+                        "插槽长度": "长",
+                        "Base Segment:Bus:Device:Function Number": "0:0:31:7"
+                    },
+                    "PCIEX1_1": {
+                        "插槽名称": "PCIEX1_1",
+                        "插槽类型": "PCI Express x1",
+                        "插槽使用": "空",
+                        "插槽数据总线位宽": "1x / x1",
+                        "插槽长度": "短",
+                        "Base Segment:Bus:Device:Function Number": "0:0:31:7"
+                    },
+                    "PCIEX1_2": {
+                        "插槽名称": "PCIEX1_2",
+                        "插槽类型": "PCI Express x1",
+                        "插槽使用": "空",
+                        "插槽数据总线位宽": "1x / x1",
+                        "插槽长度": "短",
+                        "Base Segment:Bus:Device:Function Number": "0:0:31:7"
+                    }
+                }
+            }
+        }
+    },
+    "MEMORY": {
+        "内存": {
+            "常规信息": {
+                "内存总大小": "32 GiB",
+                "Total Memory Size [MB]": "32768"
+            },
+            "当前性能设置": {
+                "支持的最大内存频率": "无限制",
+                "当前内存频率": "1197.8 MHz",
+                "当前时序 (tCAS-tRCD-tRP-tRAS)": "17-17-17-39",
+                "支持的内存通道": "2",
+                "活动的内存通道": "1",
+                "命令率 (CR)": "2T",
+                "Read to Read Delay (tRDRD_SC) Same Chipselect": "1T",
+                "Read to Read Delay (tRDRD_SG/TrdrdScL) Same Bank Group": "3T",
+                "Read to Read Delay (tRDRD_SD) Same DIMM": "4T",
+                "Read to Read Delay (tRDRD_DD) Different DIMM": "3T",
+                "Write to Write Delay (tWRWR_SC) Same Chipselect": "1T",
+                "Write to Write Delay (tWRWR_SG/TwrwrScL) Same Bank Group": "3T",
+                "Write to Write Delay (tWRWR_SD) Same DIMM": "6T",
+                "Write to Write Delay (tWRWR_DD) Different DIMM": "5T",
+                "Read to Write Delay (tRDWR_SC) Same Chipselect": "11T",
+                "Read to Write Delay (tRDWR_SG/TrdwrScL) Same Bank Group": "11T",
+                "Read to Write Delay (tRDWR_DG/TrdwrScDlr) Different Bank Group": "11T",
+                "Read to Write Delay (tRDWR_SD) Same DIMM": "11T",
+                "Read to Write Delay (tRDWR_DD) Different DIMM": "11T",
+                "Write to Read Delay (tWRRD_SC) Same Chipselect": "1T",
+                "Write to Read Delay (tWRRD_SG/TwrrdScL) Same Bank Group": "1T",
+                "Write to Read Delay (tWRRD_SD) Same DIMM": "1T",
+                "Write to Read Delay (tWRRD_DD) Different DIMM": "1T",
+                "Read to Precharge Delay (tRTP)": "9T",
+                "Write to Precharge Delay (tWTP)": "29T",
+                "Write Recovery Time (tWR)": "18T",
+                "RAS# to RAS# Delay (tRRD_L)": "6T",
+                "RAS# to RAS# Delay (tRRD_S)": "4T",
+                "Row Cycle Time (tRC)": "56T",
+                "Refresh Cycle Time (tRFC)": "661T",
+                "Four Activate Window (tFAW)": "26T"
+            },
+            "行: 0 [BANK 0/DIMM_A1] - 32 GB PC4-25600 DDR4 SDRAM Cuso VCM4UX32C18BG-SYXXD": {
+                "内存模块常规信息": {
+                    "内存模块编号": "0",
+                    "内存模块容量": "32 GiB",
+                    "内存类型": "DDR4 SDRAM",
+                    "内存模块类型": "Unbuffered DIMM (UDIMM)",
+                    "内存速度": "1600.0 MHz (DDR4-3200 / PC4-25600)",
+                    "内存模块制造商": "Cuso",
+                    "内存模块部件号": "VCM4UX32C18BG-SYXXD",
+                    "内存模块修订版": "0.0",
+                    "内存模块序号": "1998795476 (D4322377)",
+                    "内存模块生产日期": "年: 2023, 周: 24",
+                    "内存模块产地": "0",
+                    "SDRAM 制造商": "Micron",
+                    "错误检查/纠正": "无"
+                },
+                "内存模块特征": {
+                    "行地址位": "17",
+                    "列地址位": "10",
+                    "内存模块密度": "16384 Mb",
+                    "Rank 的数量": "2",
+                    "Bank 组的数量": "4",
+                    "设备位宽": "8 bits",
+                    "总线位宽": "64 bits",
+                    "Die Count": "1",
+                    "内存模块标称电压 (VDD)": "1.2 V",
+                    "最小 SDRAM 周期时间 (tCKAVGmin)": "0.83300 ns (1200 MHz)",
+                    "最大 SDRAM 周期时间 (tCKAVGmax)": "1.60000 ns",
+                    "支持的 CAS# 延迟": "10, 11, 12, 13, 14, 15, 16, 17, 18",
+                    "最小 CAS# 延迟时间 (tAAmin)": "13.750 ns",
+                    "最小 RAS# 到 CAS# 迟延 (tRCDmin)": "13.750 ns",
+                    "Minimum Row Precharge Time (tRPmin)": "13.750 ns",
+                    "Minimum Active to Precharge Time (tRASmin)": "32.000 ns",
+                    "支持的内存模块时序 1200.0 MHz": "17-17-17-39",
+                    "支持的内存模块时序 1066.7 MHz": "15-15-15-35",
+                    "支持的内存模块时序 933.3 MHz": "13-13-13-30",
+                    "支持的内存模块时序 800.0 MHz": "11-11-11-26",
+                    "支持的内存模块时序 666.7 MHz": "10-10-10-22",
+                    "Minimum Active to Active/Refresh Time (tRCmin)": "45.750 ns",
+                    "Minimum Refresh Recovery Time Delay (tRFC1min)": "550.000 ns",
+                    "Minimum Refresh Recovery Time Delay (tRFC2min)": "350.000 ns",
+                    "Minimum Refresh Recovery Time Delay (tRFC4min)": "260.000 ns",
+                    "Minimum Four Activate Window Delay Time (tFAWmin)": "21.000 ns",
+                    "Minimum Active to Active Delay Time - Different Bank Group (tRRD_Smin)": "3.300 ns",
+                    "Minimum Active to Active Delay Time - Same Bank Group (tRRD_Lmin)": "4.900 ns",
+                    "Minimum CAS to CAS Delay Time - Same Bank Group (tCCD_Lmin)": "5.000 ns"
+                },
+                "特征": {
+                    "内存模块温度传感器 (TSOD)": "不支持",
+                    "内存模块标称高度": "31 - 32 mm",
+                    "内存模块最大厚度 (正面)": "1 - 2 mm",
+                    "内存模块最大厚度 (背面)": "1 - 2 mm",
+                    "Address Mapping from Edge Connector to DRAM": "Standard"
+                },
+                "英特尔极限内存配置文件 (XMP)": {
+                    "XMP Revision": "2.0"
+                },
+                "认证配置文件 [启用]": {
+                    "内存模块 VDD 电压等级": "1.35 V",
+                    "最小 SDRAM 周期时间 (tCKAVGmin)": "0.62500 ns (1600 MHz)",
+                    "支持的 CAS# 延迟": "16",
+                    "最小 CAS# 延迟时间 (tAAmin)": "11.250 ns",
+                    "最小 RAS# 到 CAS# 迟延 (tRCDmin)": "13.750 ns",
+                    "Minimum Row Precharge Time (tRPmin)": "13.750 ns",
+                    "Minimum Active to Precharge Time (tRASmin)": "26.250 ns",
+                    "Minimum Active to Active/Refresh Time (tRCmin)": "42.000 ns",
+                    "Minimum Refresh Recovery Time Delay (tRFC1min)": "550.000 ns",
+                    "Minimum Refresh Recovery Time Delay (tRFC2min)": "350.000 ns",
+                    "Minimum Refresh Recovery Time Delay (tRFC4min)": "260.000 ns",
+                    "Minimum Four Activate Window Delay Time (tFAWmin)": "21.000 ns",
+                    "Minimum Active to Active Delay Time - Different Bank Group (tRRD_Smin)": "3.497 ns",
+                    "Minimum Active to Active Delay Time - Same Bank Group (tRRD_Lmin)": "5.122 ns"
+                }
+            }
+        }
+    },
+    "BUS": {
+        "总线": {
+            "PCI 总线 #0": {
+                "AMD Renoir/Cezanne - Root Complex": {
+                    "常规信息": {
+                        "设备名称": "AMD Renoir/Cezanne - Root Complex",
+                        "原始设备名称": "AMD Renoir/Cezanne - Root Complex",
+                        "设备类别": "Host-to-PCI Bridge",
+                        "修订版 ID": "0",
+                        "PCI 地址编号 (总线: 设备: 功能)": "0:0:0",
+                        "PCI Latency Timer": "0",
+                        "硬件 ID": "PCI\\VEN_1022&DEV_1630&SUBSYS_88091043&REV_00"
+                    },
+                    "系统资源": {
+                        "中断线": "不适用",
+                        "中断引脚": "不适用"
+                    },
+                    "特征": {
+                        "Bus Mastering": "禁用",
+                        "Running At 66 MHz": "不支持",
+                        "Fast Back-to-Back Transactions": "不支持"
+                    },
+                    "设备驱动程序信息": {
+                        "驱动程序制造商": "Microsoft",
+                        "驱动程序描述": "PCI standard host CPU bridge",
+                        "驱动程序提供商": "Microsoft",
+                        "驱动程序版本": "10.0.26100.1150",
+                        "驱动程序日期": "21-Jun-2006",
+                        "设备实例 ID": "PCI\\VEN_1022&DEV_1630&SUBSYS_88091043&REV_00\\3&11583659&0&00",
+                        "位置路径": "PCIROOT(0)#PCI(0000)"
+                    }
+                },
+                "AMD Renoir/Van Gogh/Cezanne - PCIe Dummy Host Bridge": {
+                    "常规信息": {
+                        "设备名称": [
+                            "AMD Renoir/Van Gogh/Cezanne - PCIe Dummy Host Bridge",
+                            "AMD Renoir/Van Gogh/Cezanne - PCIe Dummy Host Bridge",
+                            "AMD Renoir/Van Gogh/Cezanne - PCIe Dummy Host Bridge"
+                        ],
+                        "原始设备名称": [
+                            "AMD Renoir/Van Gogh/Cezanne - PCIe Dummy Host Bridge",
+                            "AMD Renoir/Van Gogh/Cezanne - PCIe Dummy Host Bridge",
+                            "AMD Renoir/Van Gogh/Cezanne - PCIe Dummy Host Bridge"
+                        ],
+                        "设备类别": [
+                            "Host-to-PCI Bridge",
+                            "Host-to-PCI Bridge",
+                            "Host-to-PCI Bridge"
+                        ],
+                        "修订版 ID": [
+                            "0",
+                            "0",
+                            "0"
+                        ],
+                        "PCI 地址编号 (总线: 设备: 功能)": [
+                            "0:1:0",
+                            "0:2:0",
+                            "0:8:0"
+                        ],
+                        "PCI Latency Timer": [
+                            "0",
+                            "0",
+                            "0"
+                        ],
+                        "硬件 ID": [
+                            "PCI\\VEN_1022&DEV_1632&SUBSYS_00000000&REV_00",
+                            "PCI\\VEN_1022&DEV_1632&SUBSYS_00000000&REV_00",
+                            "PCI\\VEN_1022&DEV_1632&SUBSYS_00000000&REV_00"
+                        ]
+                    },
+                    "系统资源": {
+                        "中断线": [
+                            "不适用",
+                            "不适用",
+                            "不适用"
+                        ],
+                        "中断引脚": [
+                            "不适用",
+                            "不适用",
+                            "不适用"
+                        ]
+                    },
+                    "特征": {
+                        "Bus Mastering": [
+                            "禁用",
+                            "禁用",
+                            "禁用"
+                        ],
+                        "Running At 66 MHz": [
+                            "不支持",
+                            "不支持",
+                            "不支持"
+                        ],
+                        "Fast Back-to-Back Transactions": [
+                            "不支持",
+                            "不支持",
+                            "不支持"
+                        ]
+                    },
+                    "设备驱动程序信息": {
+                        "驱动程序制造商": [
+                            "Microsoft",
+                            "Microsoft",
+                            "Microsoft"
+                        ],
+                        "驱动程序描述": [
+                            "PCI standard host CPU bridge",
+                            "PCI standard host CPU bridge",
+                            "PCI standard host CPU bridge"
+                        ],
+                        "驱动程序提供商": [
+                            "Microsoft",
+                            "Microsoft",
+                            "Microsoft"
+                        ],
+                        "驱动程序版本": [
+                            "10.0.26100.1150",
+                            "10.0.26100.1150",
+                            "10.0.26100.1150"
+                        ],
+                        "驱动程序日期": [
+                            "21-Jun-2006",
+                            "21-Jun-2006",
+                            "21-Jun-2006"
+                        ],
+                        "设备实例 ID": [
+                            "PCI\\VEN_1022&DEV_1632&SUBSYS_00000000&REV_00\\3&11583659&0&08",
+                            "PCI\\VEN_1022&DEV_1632&SUBSYS_00000000&REV_00\\3&11583659&0&10",
+                            "PCI\\VEN_1022&DEV_1632&SUBSYS_00000000&REV_00\\3&11583659&0&40"
+                        ],
+                        "位置路径": [
+                            "PCIROOT(0)#PCI(0100)",
+                            "PCIROOT(0)#PCI(0200)",
+                            "PCIROOT(0)#PCI(0800)"
+                        ]
+                    }
+                },
+                "AMD Renoir/Cezanne - PCIe GPP Bridge": {
+                    "常规信息": {
+                        "设备名称": [
+                            "AMD Renoir/Cezanne - PCIe GPP Bridge",
+                            "AMD Renoir/Cezanne - PCIe GPP Bridge"
+                        ],
+                        "原始设备名称": [
+                            "AMD Renoir/Cezanne - PCIe GPP Bridge",
+                            "AMD Renoir/Cezanne - PCIe GPP Bridge"
+                        ],
+                        "设备类别": [
+                            "PCI-to-PCI Bridge",
+                            "PCI-to-PCI Bridge"
+                        ],
+                        "修订版 ID": [
+                            "0",
+                            "0"
+                        ],
+                        "PCI 地址编号 (总线: 设备: 功能)": [
+                            "0:2:1",
+                            "0:2:2"
+                        ],
+                        "PCI Latency Timer": [
+                            "0",
+                            "0"
+                        ],
+                        "硬件 ID": [
+                            "PCI\\VEN_1022&DEV_1634&SUBSYS_00000000&REV_00",
+                            "PCI\\VEN_1022&DEV_1634&SUBSYS_00000000&REV_00"
+                        ]
+                    },
+                    "PCI Express": {
+                        "版本": [
+                            "3.0",
+                            "3.0"
+                        ],
+                        "最大链接位宽": [
+                            "x4",
+                            "x4"
+                        ],
+                        "当前链接位宽": [
+                            "x4",
+                            "x4"
+                        ],
+                        "最大链接速度": [
+                            "8.0 GT/s",
+                            "8.0 GT/s"
+                        ],
+                        "当前链接速度": [
+                            "8.0 GT/s",
+                            "8.0 GT/s"
+                        ],
+                        "设备/端口类型": [
+                            "PCI Express 根复合体的根端口",
+                            "PCI Express 根复合体的根端口"
+                        ],
+                        "实现的插槽": [
+                            "是",
+                            "是"
+                        ],
+                        "热插拔": [
+                            "不支持",
+                            "不支持"
+                        ],
+                        "意外的热插拔": [
+                            "不支持",
+                            "不支持"
+                        ],
+                        "插槽功率限制": [
+                            "75.000 W",
+                            "75.000 W"
+                        ],
+                        "Emergency Power Reduction": [
+                            "不支持",
+                            "不支持"
+                        ],
+                        "活动状态电源管理 (ASPM) 支持": [
+                            "无",
+                            "无"
+                        ],
+                        "活动状态电源管理 (ASPM) 状态": [
+                            "禁用",
+                            "禁用"
+                        ],
+                        "L0s Exit Latency": [
+                            ">4 us",
+                            ">4 us"
+                        ],
+                        "L1 Exit Latency": [
+                            "16 - 32 us",
+                            "32 - 64 us"
+                        ],
+                        "Maximum Payload Size Supported": [
+                            "512 bytes",
+                            "512 bytes"
+                        ],
+                        "Maximum Payload Size": [
+                            "128 bytes",
+                            "512 bytes"
+                        ],
+                        "可调整大小的 BAR 支持": [
+                            "不支持",
+                            "不支持"
+                        ]
+                    },
+                    "系统资源": {
+                        "中断线": [
+                            "不适用",
+                            "不适用"
+                        ],
+                        "中断引脚": [
+                            "不适用",
+                            "不适用"
+                        ]
+                    },
+                    "特征": {
+                        "Bus Mastering": [
+                            "启用",
+                            "启用"
+                        ],
+                        "Running At 66 MHz": [
+                            "不支持",
+                            "不支持"
+                        ],
+                        "Fast Back-to-Back Transactions": [
+                            "不支持",
+                            "不支持"
+                        ]
+                    },
+                    "设备驱动程序信息": {
+                        "驱动程序制造商": [
+                            "Microsoft",
+                            "Microsoft"
+                        ],
+                        "驱动程序描述": [
+                            "PCI-to-PCI Bridge",
+                            "PCI-to-PCI Bridge"
+                        ],
+                        "驱动程序提供商": [
+                            "Microsoft",
+                            "Microsoft"
+                        ],
+                        "驱动程序版本": [
+                            "10.0.26100.1150",
+                            "10.0.26100.1150"
+                        ],
+                        "驱动程序日期": [
+                            "21-Jun-2006",
+                            "21-Jun-2006"
+                        ],
+                        "设备实例 ID": [
+                            "PCI\\VEN_1022&DEV_1634&SUBSYS_88091043&REV_00\\3&11583659&0&11",
+                            "PCI\\VEN_1022&DEV_1634&SUBSYS_88091043&REV_00\\3&11583659&0&12"
+                        ],
+                        "位置路径": [
+                            "PCIROOT(0)#PCI(0201)",
+                            "PCIROOT(0)#PCI(0202)"
+                        ]
+                    },
+                    "PCI Express x4 总线 #1": {
+                        "AMD A520 Chipset - USB Controller A": {
+                            "常规信息": {
+                                "设备名称": "AMD A520 Chipset - USB Controller A",
+                                "原始设备名称": "AMD A520 Chipset - USB Controller A",
+                                "设备类别": "USB xHCI Controller",
+                                "修订版 ID": "0",
+                                "PCI 地址编号 (总线: 设备: 功能)": "1:0:0",
+                                "PCI Latency Timer": "0",
+                                "硬件 ID": "PCI\\VEN_1022&DEV_43EC&SUBSYS_11421B21&REV_00"
+                            },
+                            "PCI Express": {
+                                "版本": "3.0",
+                                "最大链接位宽": "x4",
+                                "当前链接位宽": "x4",
+                                "最大链接速度": "8.0 GT/s",
+                                "当前链接速度": "8.0 GT/s",
+                                "设备/端口类型": "传统 PCI Express 端点",
+                                "实现的插槽": "否",
+                                "Emergency Power Reduction": "不支持",
+                                "活动状态电源管理 (ASPM) 支持": "L0s and L1",
+                                "活动状态电源管理 (ASPM) 状态": "禁用",
+                                "L0s Exit Latency": "1 - 2 us",
+                                "L1 Exit Latency": "16 - 32 us",
+                                "Maximum Payload Size Supported": "512 bytes",
+                                "Maximum Payload Size": "128 bytes",
+                                "可调整大小的 BAR 支持": "不支持"
+                            },
+                            "系统资源": {
+                                "中断线": "不适用",
+                                "中断引脚": "INTA#",
+                                "内存基址 0": "FCEA0000"
+                            },
+                            "特征": {
+                                "Bus Mastering": "启用",
+                                "Running At 66 MHz": "不支持",
+                                "Fast Back-to-Back Transactions": "不支持",
+                                "支持的 USB 版本": "3.1"
+                            },
+                            "设备驱动程序信息": {
+                                "驱动程序制造商": "Microsoft",
+                                "驱动程序描述": "USB xHCI Compliant Host Controller",
+                                "驱动程序提供商": "Microsoft",
+                                "驱动程序版本": "10.0.26100.1591",
+                                "驱动程序日期": "20-Aug-2024",
+                                "设备实例 ID": "PCI\\VEN_1022&DEV_43EC&SUBSYS_11421B21&REV_00\\4&9E877F&0&0011",
+                                "位置路径": "PCIROOT(0)#PCI(0201)#PCI(0000)"
+                            },
+                            "USB Root Hub": {
+                                "[Port7] : SiGma Micro, PID=0034": {
+                                    "设备信息": {
+                                        "设备制造商": "SIGMACHIP",
+                                        "产品名称": "Usb Mouse",
+                                        "序号": "不适用",
+                                        "支持的 USB 版本": "1.10",
+                                        "USB Speed Capable": "USB 1.1 Low-speed",
+                                        "USB Speed Connected": "USB 1.1 Low-speed",
+                                        "Maximum Current": "100 mA",
+                                        "驱动程序描述": "USB 输入设备",
+                                        "硬件 ID": "USB\\VID_1C4F&PID_0034"
+                                    },
+                                    "设备驱动程序信息": {
+                                        "驱动程序制造商": "Microsoft",
+                                        "驱动程序描述": "USB Input Device",
+                                        "驱动程序提供商": "Microsoft",
+                                        "驱动程序版本": "10.0.26100.1150",
+                                        "驱动程序日期": "21-Jun-2006",
+                                        "设备实例 ID": "USB\\VID_1C4F&PID_0034\\6&25074F63&0&7",
+                                        "位置路径": "PCIROOT(0)#PCI(0201)#PCI(0000)#USBROOT(0)#USB(7)"
+                                    }
+                                },
+                                "[Port8] : China Resource Semico, PID=2124": {
+                                    "设备信息": {
+                                        "设备制造商": "不适用",
+                                        "产品名称": "USB Keyboard",
+                                        "序号": "不适用",
+                                        "支持的 USB 版本": "1.10",
+                                        "USB Speed Capable": "USB 1.1 Low-speed",
+                                        "USB Speed Connected": "USB 1.1 Low-speed",
+                                        "Maximum Current": "98 mA",
+                                        "驱动程序描述": "USB Composite Device",
+                                        "硬件 ID": "USB\\VID_1A2C&PID_2124"
+                                    },
+                                    "设备驱动程序信息": {
+                                        "驱动程序制造商": "Microsoft",
+                                        "驱动程序描述": "USB Composite Device",
+                                        "驱动程序提供商": "Microsoft",
+                                        "驱动程序版本": "10.0.26100.1301",
+                                        "驱动程序日期": "21-Jun-2006",
+                                        "设备实例 ID": "USB\\VID_1A2C&PID_2124\\6&25074F63&0&8",
+                                        "位置路径": "PCIROOT(0)#PCI(0201)#PCI(0000)#USBROOT(0)#USB(8)"
+                                    }
+                                }
+                            }
+                        },
+                        "AMD 500-Series Chipset - SATA Controller": {
+                            "常规信息": {
+                                "设备名称": "AMD 500-Series Chipset - SATA Controller",
+                                "原始设备名称": "AMD 500-Series Chipset - SATA Controller",
+                                "设备类别": "SATA AHCI Controller",
+                                "修订版 ID": "0",
+                                "PCI 地址编号 (总线: 设备: 功能)": "1:0:1",
+                                "PCI Latency Timer": "0",
+                                "硬件 ID": "PCI\\VEN_1022&DEV_43EB&SUBSYS_10621B21&REV_00"
+                            },
+                            "PCI Express": {
+                                "版本": "3.0",
+                                "最大链接位宽": "x4",
+                                "当前链接位宽": "x4",
+                                "最大链接速度": "8.0 GT/s",
+                                "当前链接速度": "8.0 GT/s",
+                                "设备/端口类型": "传统 PCI Express 端点",
+                                "实现的插槽": "否",
+                                "Emergency Power Reduction": "不支持",
+                                "活动状态电源管理 (ASPM) 支持": "L0s and L1",
+                                "活动状态电源管理 (ASPM) 状态": "禁用",
+                                "L0s Exit Latency": "1 - 2 us",
+                                "L1 Exit Latency": "16 - 32 us",
+                                "Maximum Payload Size Supported": "512 bytes",
+                                "Maximum Payload Size": "128 bytes",
+                                "可调整大小的 BAR 支持": "不支持"
+                            },
+                            "系统资源": {
+                                "中断线": "不适用",
+                                "中断引脚": "INTB#",
+                                "内存基址 5": "FCE80000"
+                            },
+                            "特征": {
+                                "Bus Mastering": "禁用",
+                                "Running At 66 MHz": "不支持",
+                                "Fast Back-to-Back Transactions": "不支持"
+                            },
+                            "SATA 主机控制器": {
+                                "支持的接口速度": "Gen3 6.0 Gbps",
+                                "端口数量": "6",
+                                "外部 SATA 支持": "支持",
+                                "主​​​​​​​动​​​​​​​​​​链接电​​​​​​​源​​​​​​​管​​​​​​​理 (ALPM)": "支持",
+                                "Staggered Spin-up": "支持",
+                                "Mechanical Presence Switch": "不支持",
+                                "Command Queue Acceleration": "支持",
+                                "64-bit Addressing": "支持",
+                                "AHCI 状态": "启用",
+                                "AHCI 版本": "1.31",
+                                "实现的端口": "0, 1, 4, 5"
+                            },
+                            "SATA Port#0": {
+                                "端口状态": "设备不存在",
+                                "外部 SATA 端口": "不支持",
+                                "热插拔": "不支持"
+                            },
+                            "SATA Port#1": {
+                                "端口状态": "设备不存在",
+                                "外部 SATA 端口": "不支持",
+                                "热插拔": "不支持"
+                            },
+                            "SATA Port#4": {
+                                "端口状态": "设备不存在",
+                                "外部 SATA 端口": "不支持",
+                                "热插拔": "不支持"
+                            },
+                            "SATA Port#5": {
+                                "端口状态": "设备不存在",
+                                "外部 SATA 端口": "不支持",
+                                "热插拔": "不支持"
+                            },
+                            "设备驱动程序信息": {
+                                "驱动程序制造商": "Microsoft",
+                                "驱动程序描述": "Standard SATA AHCI Controller",
+                                "驱动程序提供商": "Microsoft",
+                                "驱动程序版本": "10.0.26100.1150",
+                                "驱动程序日期": "21-Jun-2006",
+                                "设备实例 ID": "PCI\\VEN_1022&DEV_43EB&SUBSYS_10621B21&REV_00\\4&9E877F&0&0111",
+                                "位置路径": "PCIROOT(0)#PCI(0201)#PCI(0001)"
+                            }
+                        },
+                        "AMD 500-Series Chipset - PCIe Upstream Switch": {
+                            "常规信息": {
+                                "设备名称": "AMD 500-Series Chipset - PCIe Upstream Switch",
+                                "原始设备名称": "AMD 500-Series Chipset - PCIe Upstream Switch",
+                                "设备类别": "PCI-to-PCI Bridge",
+                                "修订版 ID": "0",
+                                "PCI 地址编号 (总线: 设备: 功能)": "1:0:2",
+                                "PCI Latency Timer": "0",
+                                "硬件 ID": "PCI\\VEN_1022&DEV_43E9&SUBSYS_00000000&REV_00"
+                            },
+                            "PCI Express": {
+                                "版本": "3.0",
+                                "最大链接位宽": "x4",
+                                "当前链接位宽": "x4",
+                                "最大链接速度": "8.0 GT/s",
+                                "当前链接速度": "8.0 GT/s",
+                                "设备/端口类型": "PCI Express 交换机的上游端口",
+                                "实现的插槽": "否",
+                                "Emergency Power Reduction": "不支持",
+                                "活动状态电源管理 (ASPM) 支持": "L0s and L1",
+                                "活动状态电源管理 (ASPM) 状态": "禁用",
+                                "L0s Exit Latency": "1 - 2 us",
+                                "L1 Exit Latency": "16 - 32 us",
+                                "Maximum Payload Size Supported": "512 bytes",
+                                "Maximum Payload Size": "128 bytes",
+                                "可调整大小的 BAR 支持": "不支持"
+                            },
+                            "系统资源": {
+                                "中断线": "不适用",
+                                "中断引脚": "INTC#"
+                            },
+                            "特征": {
+                                "Bus Mastering": "启用",
+                                "Running At 66 MHz": "不支持",
+                                "Fast Back-to-Back Transactions": "不支持"
+                            },
+                            "设备驱动程序信息": {
+                                "驱动程序制造商": "Microsoft",
+                                "驱动程序描述": "PCI-to-PCI Bridge",
+                                "驱动程序提供商": "Microsoft",
+                                "驱动程序版本": "10.0.26100.1150",
+                                "驱动程序日期": "21-Jun-2006",
+                                "设备实例 ID": "PCI\\VEN_1022&DEV_43E9&SUBSYS_02011B21&REV_00\\4&9E877F&0&0211",
+                                "位置路径": "PCIROOT(0)#PCI(0201)#PCI(0002)"
+                            },
+                            "PCI Express x4 总线 #2": {
+                                "AMD 500-Series Chipset - PCIe Downstream Switch (GPP)": {
+                                    "常规信息": {
+                                        "设备名称": [
+                                            "AMD 500-Series Chipset - PCIe Downstream Switch (GPP)",
+                                            "AMD 500-Series Chipset - PCIe Downstream Switch (GPP)",
+                                            "AMD 500-Series Chipset - PCIe Downstream Switch (GPP)",
+                                            "AMD 500-Series Chipset - PCIe Downstream Switch (GPP)"
+                                        ],
+                                        "原始设备名称": [
+                                            "AMD 500-Series Chipset - PCIe Downstream Switch (GPP)",
+                                            "AMD 500-Series Chipset - PCIe Downstream Switch (GPP)",
+                                            "AMD 500-Series Chipset - PCIe Downstream Switch (GPP)",
+                                            "AMD 500-Series Chipset - PCIe Downstream Switch (GPP)"
+                                        ],
+                                        "设备类别": [
+                                            "PCI-to-PCI Bridge",
+                                            "PCI-to-PCI Bridge",
+                                            "PCI-to-PCI Bridge",
+                                            "PCI-to-PCI Bridge"
+                                        ],
+                                        "修订版 ID": [
+                                            "0",
+                                            "0",
+                                            "0",
+                                            "0"
+                                        ],
+                                        "PCI 地址编号 (总线: 设备: 功能)": [
+                                            "2:0:0",
+                                            "2:1:0",
+                                            "2:2:0",
+                                            "2:3:0"
+                                        ],
+                                        "PCI Latency Timer": [
+                                            "0",
+                                            "0",
+                                            "0",
+                                            "0"
+                                        ],
+                                        "硬件 ID": [
+                                            "PCI\\VEN_1022&DEV_43EA&SUBSYS_00000000&REV_00",
+                                            "PCI\\VEN_1022&DEV_43EA&SUBSYS_00000000&REV_00",
+                                            "PCI\\VEN_1022&DEV_43EA&SUBSYS_00000000&REV_00",
+                                            "PCI\\VEN_1022&DEV_43EA&SUBSYS_00000000&REV_00"
+                                        ]
+                                    },
+                                    "PCI Express": {
+                                        "版本": [
+                                            "3.0",
+                                            "3.0",
+                                            "3.0",
+                                            "3.0"
+                                        ],
+                                        "最大链接位宽": [
+                                            "x1",
+                                            "x1",
+                                            "x1",
+                                            "x1"
+                                        ],
+                                        "当前链接位宽": [
+                                            "x1",
+                                            "x1",
+                                            "未协商",
+                                            "x1"
+                                        ],
+                                        "最大链接速度": [
+                                            "8.0 GT/s",
+                                            "8.0 GT/s",
+                                            "8.0 GT/s",
+                                            "8.0 GT/s"
+                                        ],
+                                        "当前链接速度": [
+                                            "2.5 GT/s",
+                                            "2.5 GT/s",
+                                            "2.5 GT/s",
+                                            "2.5 GT/s"
+                                        ],
+                                        "设备/端口类型": [
+                                            "PCI Express 交换机的下游端口",
+                                            "PCI Express 交换机的下游端口",
+                                            "PCI Express 交换机的下游端口",
+                                            "PCI Express 交换机的下游端口"
+                                        ],
+                                        "实现的插槽": [
+                                            "是",
+                                            "是",
+                                            "是",
+                                            "是"
+                                        ],
+                                        "热插拔": [
+                                            "不支持",
+                                            "不支持",
+                                            "不支持",
+                                            "不支持"
+                                        ],
+                                        "意外的热插拔": [
+                                            "不支持",
+                                            "不支持",
+                                            "不支持",
+                                            "不支持"
+                                        ],
+                                        "插槽功率限制": [
+                                            "26.000 W",
+                                            "26.000 W",
+                                            "26.000 W",
+                                            "26.000 W"
+                                        ],
+                                        "Emergency Power Reduction": [
+                                            "不支持",
+                                            "不支持",
+                                            "不支持",
+                                            "不支持"
+                                        ],
+                                        "活动状态电源管理 (ASPM) 支持": [
+                                            "L1",
+                                            "L1",
+                                            "L1",
+                                            "L1"
+                                        ],
+                                        "活动状态电源管理 (ASPM) 状态": [
+                                            "禁用",
+                                            "禁用",
+                                            "禁用",
+                                            "禁用"
+                                        ],
+                                        "L0s Exit Latency": [
+                                            ">4 us",
+                                            ">4 us",
+                                            ">4 us",
+                                            ">4 us"
+                                        ],
+                                        "L1 Exit Latency": [
+                                            "32 - 64 us",
+                                            "32 - 64 us",
+                                            "32 - 64 us",
+                                            "32 - 64 us"
+                                        ],
+                                        "Maximum Payload Size Supported": [
+                                            "512 bytes",
+                                            "512 bytes",
+                                            "512 bytes",
+                                            "512 bytes"
+                                        ],
+                                        "Maximum Payload Size": [
+                                            "128 bytes",
+                                            "128 bytes",
+                                            "128 bytes",
+                                            "128 bytes"
+                                        ],
+                                        "可调整大小的 BAR 支持": [
+                                            "不支持",
+                                            "不支持",
+                                            "不支持",
+                                            "不支持"
+                                        ]
+                                    },
+                                    "系统资源": {
+                                        "中断线": [
+                                            "不适用",
+                                            "不适用",
+                                            "不适用",
+                                            "不适用"
+                                        ],
+                                        "中断引脚": [
+                                            "INTA#",
+                                            "INTA#",
+                                            "INTA#",
+                                            "INTA#"
+                                        ]
+                                    },
+                                    "特征": {
+                                        "Bus Mastering": [
+                                            "启用",
+                                            "启用",
+                                            "启用",
+                                            "启用"
+                                        ],
+                                        "Running At 66 MHz": [
+                                            "不支持",
+                                            "不支持",
+                                            "不支持",
+                                            "不支持"
+                                        ],
+                                        "Fast Back-to-Back Transactions": [
+                                            "不支持",
+                                            "不支持",
+                                            "不支持",
+                                            "不支持"
+                                        ]
+                                    },
+                                    "设备驱动程序信息": {
+                                        "驱动程序制造商": [
+                                            "Microsoft",
+                                            "Microsoft",
+                                            "Microsoft",
+                                            "Microsoft"
+                                        ],
+                                        "驱动程序描述": [
+                                            "PCI-to-PCI Bridge",
+                                            "PCI-to-PCI Bridge",
+                                            "PCI-to-PCI Bridge",
+                                            "PCI-to-PCI Bridge"
+                                        ],
+                                        "驱动程序提供商": [
+                                            "Microsoft",
+                                            "Microsoft",
+                                            "Microsoft",
+                                            "Microsoft"
+                                        ],
+                                        "驱动程序版本": [
+                                            "10.0.26100.1150",
+                                            "10.0.26100.1150",
+                                            "10.0.26100.1150",
+                                            "10.0.26100.1150"
+                                        ],
+                                        "驱动程序日期": [
+                                            "21-Jun-2006",
+                                            "21-Jun-2006",
+                                            "21-Jun-2006",
+                                            "21-Jun-2006"
+                                        ],
+                                        "设备实例 ID": [
+                                            "PCI\\VEN_1022&DEV_43EA&SUBSYS_33081B21&REV_00\\5&2F50B2B4&0&000211",
+                                            "PCI\\VEN_1022&DEV_43EA&SUBSYS_33081B21&REV_00\\5&2F50B2B4&0&080211",
+                                            "PCI\\VEN_1022&DEV_43EA&SUBSYS_33081B21&REV_00\\5&2F50B2B4&0&100211",
+                                            "PCI\\VEN_1022&DEV_43EA&SUBSYS_33081B21&REV_00\\5&2F50B2B4&0&180211"
+                                        ],
+                                        "位置路径": [
+                                            "PCIROOT(0)#PCI(0201)#PCI(0002)#PCI(0000)",
+                                            "PCIROOT(0)#PCI(0201)#PCI(0002)#PCI(0100)",
+                                            "PCIROOT(0)#PCI(0201)#PCI(0002)#PCI(0200)",
+                                            "PCIROOT(0)#PCI(0201)#PCI(0002)#PCI(0300)"
+                                        ]
+                                    },
+                                    "PCI Express x1 总线 #3": {
+                                        "RealTek Semiconductor RTL8168/8111 PCI-E Gigabit Ethernet NIC": {
+                                            "常规信息": {
+                                                "设备名称": "RealTek Semiconductor RTL8168/8111 PCI-E Gigabit Ethernet NIC",
+                                                "原始设备名称": "RealTek Semiconductor RTL8168/8111 PCI-E Gigabit Ethernet NIC",
+                                                "设备类别": "Ethernet Adapter",
+                                                "修订版 ID": "15",
+                                                "PCI 地址编号 (总线: 设备: 功能)": "3:0:0",
+                                                "PCI Latency Timer": "0",
+                                                "硬件 ID": "PCI\\VEN_10EC&DEV_8168&SUBSYS_86771043&REV_15"
+                                            },
+                                            "PCI Express": {
+                                                "版本": "1.1",
+                                                "最大链接位宽": "x1",
+                                                "当前链接位宽": "x1",
+                                                "最大链接速度": "2.5 GT/s",
+                                                "当前链接速度": "2.5 GT/s",
+                                                "设备/端口类型": "PCI Express 端点",
+                                                "实现的插槽": "否",
+                                                "Emergency Power Reduction": "不支持",
+                                                "活动状态电源管理 (ASPM) 支持": "L0s and L1",
+                                                "活动状态电源管理 (ASPM) 状态": "禁用",
+                                                "L0s Exit Latency": ">4 us",
+                                                "L1 Exit Latency": "32 - 64 us",
+                                                "Maximum Payload Size Supported": "128 bytes",
+                                                "Maximum Payload Size": "128 bytes",
+                                                "可调整大小的 BAR 支持": "不支持"
+                                            },
+                                            "系统资源": {
+                                                "中断线": "不适用",
+                                                "中断引脚": "INTA#",
+                                                "I/O 基址 0": "F000",
+                                                "内存基址 2": "FCD04000",
+                                                "内存基址 4": "FCD00000"
+                                            },
+                                            "特征": {
+                                                "Bus Mastering": "启用",
+                                                "Running At 66 MHz": "不支持",
+                                                "Fast Back-to-Back Transactions": "不支持"
+                                            },
+                                            "设备驱动程序信息": {
+                                                "驱动程序制造商": "Realtek",
+                                                "驱动程序描述": "Realtek PCIe GbE Family Controller",
+                                                "驱动程序提供商": "Realtek",
+                                                "驱动程序版本": "10.75.324.2025",
+                                                "驱动程序日期": "24-Mar-2025",
+                                                "设备实例 ID": "PCI\\VEN_10EC&DEV_8168&SUBSYS_86771043&REV_15\\6&C6F3879&0&00000211",
+                                                "位置路径": "PCIROOT(0)#PCI(0201)#PCI(0002)#PCI(0000)#PCI(0000)"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "PCI Express x4 总线 #7": {
+                        "Maxio Technology MAP1602 NVMe SSD Controller": {
+                            "常规信息": {
+                                "设备名称": "Maxio Technology MAP1602 NVMe SSD Controller",
+                                "原始设备名称": "Maxio Technology MAP1602 NVMe SSD Controller",
+                                "设备类别": "NVMe Controller",
+                                "修订版 ID": "1",
+                                "PCI 地址编号 (总线: 设备: 功能)": "7:0:0",
+                                "PCI Latency Timer": "0",
+                                "硬件 ID": "PCI\\VEN_1E4B&DEV_1602&SUBSYS_16021E4B&REV_01"
+                            },
+                            "PCI Express": {
+                                "版本": "4.0",
+                                "最大链接位宽": "x4",
+                                "当前链接位宽": "x4",
+                                "最大链接速度": "16.0 GT/s",
+                                "当前链接速度": "8.0 GT/s",
+                                "设备/端口类型": "PCI Express 端点",
+                                "实现的插槽": "否",
+                                "Emergency Power Reduction": "不支持",
+                                "活动状态电源管理 (ASPM) 支持": "L1",
+                                "活动状态电源管理 (ASPM) 状态": "禁用",
+                                "L0s Exit Latency": "2 - 4 us",
+                                "L1 Exit Latency": "32 - 64 us",
+                                "Maximum Payload Size Supported": "512 bytes",
+                                "Maximum Payload Size": "512 bytes",
+                                "可调整大小的 BAR 支持": "不支持"
+                            },
+                            "系统资源": {
+                                "中断线": "不适用",
+                                "中断引脚": "INTA#",
+                                "内存基址 0": "FCF00000"
+                            },
+                            "特征": {
+                                "Bus Mastering": "启用",
+                                "Running At 66 MHz": "不支持",
+                                "Fast Back-to-Back Transactions": "不支持"
+                            },
+                            "设备驱动程序信息": {
+                                "驱动程序制造商": "Microsoft",
+                                "驱动程序描述": "Standard NVM Express Controller",
+                                "驱动程序提供商": "Microsoft",
+                                "驱动程序版本": "10.0.26100.1591",
+                                "驱动程序日期": "21-Jun-2006",
+                                "设备实例 ID": "PCI\\VEN_1E4B&DEV_1602&SUBSYS_16021E4B&REV_01\\4&39D769C7&0&0012",
+                                "位置路径": "PCIROOT(0)#PCI(0202)#PCI(0000)"
+                            }
+                        }
+                    }
+                },
+                "AMD Renoir/Cezanne - Internal PCIe GPP Bridge to Bus": {
+                    "常规信息": {
+                        "设备名称": "AMD Renoir/Cezanne - Internal PCIe GPP Bridge to Bus",
+                        "原始设备名称": "AMD Renoir/Cezanne - Internal PCIe GPP Bridge to Bus",
+                        "设备类别": "PCI-to-PCI Bridge",
+                        "修订版 ID": "0",
+                        "PCI 地址编号 (总线: 设备: 功能)": "0:8:1",
+                        "PCI Latency Timer": "0",
+                        "硬件 ID": "PCI\\VEN_1022&DEV_1635&SUBSYS_00000000&REV_00"
+                    },
+                    "PCI Express": {
+                        "版本": "4.0",
+                        "最大链接位宽": "x16",
+                        "当前链接位宽": "x16",
+                        "最大链接速度": "16.0 GT/s",
+                        "当前链接速度": "8.0 GT/s",
+                        "设备/端口类型": "PCI Express 根复合体的根端口",
+                        "实现的插槽": "否",
+                        "Emergency Power Reduction": "不支持",
+                        "活动状态电源管理 (ASPM) 支持": "L0s and L1",
+                        "活动状态电源管理 (ASPM) 状态": "禁用",
+                        "L0s Exit Latency": "< 64 ns",
+                        "L1 Exit Latency": "< 1 us",
+                        "Maximum Payload Size Supported": "512 bytes",
+                        "Maximum Payload Size": "256 bytes",
+                        "可调整大小的 BAR 支持": "不支持"
+                    },
+                    "系统资源": {
+                        "中断线": "不适用",
+                        "中断引脚": "INTA#"
+                    },
+                    "特征": {
+                        "Bus Mastering": "启用",
+                        "Running At 66 MHz": "不支持",
+                        "Fast Back-to-Back Transactions": "不支持"
+                    },
+                    "设备驱动程序信息": {
+                        "驱动程序制造商": "Microsoft",
+                        "驱动程序描述": "PCI-to-PCI Bridge",
+                        "驱动程序提供商": "Microsoft",
+                        "驱动程序版本": "10.0.26100.1150",
+                        "驱动程序日期": "21-Jun-2006",
+                        "设备实例 ID": "PCI\\VEN_1022&DEV_1635&SUBSYS_88091043&REV_00\\3&11583659&0&41",
+                        "位置路径": "PCIROOT(0)#PCI(0801)"
+                    },
+                    "PCI Express x16 总线 #8": {
+                        "ATI/AMD Cezanne - Internal GPU": {
+                            "常规信息": {
+                                "设备名称": "ATI/AMD Cezanne - Internal GPU",
+                                "原始设备名称": "ATI/AMD Cezanne - Internal GPU",
+                                "设备类别": "VGA Compatible Adapter",
+                                "修订版 ID": "C9",
+                                "PCI 地址编号 (总线: 设备: 功能)": "8:0:0",
+                                "PCI Latency Timer": "0",
+                                "硬件 ID": "PCI\\VEN_1002&DEV_1638&SUBSYS_88091043&REV_C9"
+                            },
+                            "PCI Express": {
+                                "版本": "4.0",
+                                "最大链接位宽": "x16",
+                                "当前链接位宽": "x16",
+                                "最大链接速度": "16.0 GT/s",
+                                "当前链接速度": "8.0 GT/s",
+                                "设备/端口类型": "传统 PCI Express 端点",
+                                "实现的插槽": "否",
+                                "Emergency Power Reduction": "不支持",
+                                "活动状态电源管理 (ASPM) 支持": "L0s and L1",
+                                "活动状态电源管理 (ASPM) 状态": "禁用",
+                                "L0s Exit Latency": "< 64 ns",
+                                "L1 Exit Latency": "< 1 us",
+                                "Maximum Payload Size Supported": "256 bytes",
+                                "Maximum Payload Size": "256 bytes",
+                                "可调整大小的 BAR 支持": "不支持"
+                            },
+                            "系统资源": {
+                                "中断线": "不适用",
+                                "中断引脚": "INTA#",
+                                "内存基址 0": "D0000000",
+                                "内存基址 2": "E0000000",
+                                "I/O 基址 4": "EF00",
+                                "内存基址 5": "FCC00000"
+                            },
+                            "特征": {
+                                "Bus Mastering": "启用",
+                                "Running At 66 MHz": "不支持",
+                                "Fast Back-to-Back Transactions": "不支持"
+                            },
+                            "设备驱动程序信息": {
+                                "驱动程序制造商": "Advanced Micro Devices, Inc.",
+                                "驱动程序描述": "AMD Radeon(TM) Graphics",
+                                "驱动程序提供商": "Advanced Micro Devices, Inc.",
+                                "驱动程序版本": "31.0.21923.11000",
+                                "AMD 驱动程序包版本": "23.19.23.11-250701a-417877C-AMD-Software-Adrenalin-Edition",
+                                "AMD Software 驱动程序版本": "25.8.1",
+                                "驱动程序日期": "01-Jul-2025",
+                                "DCH/UWD 驱动程序": "不支持",
+                                "设备实例 ID": "PCI\\VEN_1002&DEV_1638&SUBSYS_88091043&REV_C9\\4&3293EFF9&0&0041",
+                                "位置路径": "PCIROOT(0)#PCI(0801)#PCI(0000)"
+                            }
+                        },
+                        "ATI/AMD Renoir/Cezanne - Display HD Audio Controller": {
+                            "常规信息": {
+                                "设备名称": "ATI/AMD Renoir/Cezanne - Display HD Audio Controller",
+                                "原始设备名称": "ATI/AMD Renoir/Cezanne - Display HD Audio Controller",
+                                "设备类别": "High Definition Audio",
+                                "修订版 ID": "0",
+                                "PCI 地址编号 (总线: 设备: 功能)": "8:0:1",
+                                "PCI Latency Timer": "0",
+                                "硬件 ID": "PCI\\VEN_1002&DEV_1637&SUBSYS_88091043&REV_00"
+                            },
+                            "PCI Express": {
+                                "版本": "4.0",
+                                "最大链接位宽": "x16",
+                                "当前链接位宽": "x16",
+                                "最大链接速度": "16.0 GT/s",
+                                "当前链接速度": "8.0 GT/s",
+                                "设备/端口类型": "传统 PCI Express 端点",
+                                "实现的插槽": "否",
+                                "Emergency Power Reduction": "不支持",
+                                "活动状态电源管理 (ASPM) 支持": "L0s and L1",
+                                "活动状态电源管理 (ASPM) 状态": "禁用",
+                                "L0s Exit Latency": "< 64 ns",
+                                "L1 Exit Latency": "< 1 us",
+                                "Maximum Payload Size Supported": "256 bytes",
+                                "Maximum Payload Size": "256 bytes",
+                                "可调整大小的 BAR 支持": "不支持"
+                            },
+                            "系统资源": {
+                                "中断线": "IRQ39",
+                                "中断引脚": "INTB#",
+                                "内存基址 0": "FCCF8000"
+                            },
+                            "特征": {
+                                "Bus Mastering": "启用",
+                                "Running At 66 MHz": "不支持",
+                                "Fast Back-to-Back Transactions": "不支持"
+                            },
+                            "设备驱动程序信息": {
+                                "驱动程序制造商": "AMD",
+                                "驱动程序描述": "High Definition Audio Bus",
+                                "驱动程序提供商": "AMD",
+                                "驱动程序版本": "25.30.0.1",
+                                "驱动程序日期": "21-Aug-2025",
+                                "设备实例 ID": "PCI\\VEN_1002&DEV_1637&SUBSYS_88091043&REV_00\\4&3293EFF9&0&0141",
+                                "位置路径": "PCIROOT(0)#PCI(0801)#PCI(0001)"
+                            }
+                        },
+                        "AMD Zen APU - Cryptographic Coprocessor": {
+                            "常规信息": {
+                                "设备名称": "AMD Zen APU - Cryptographic Coprocessor",
+                                "原始设备名称": "AMD Zen APU - Cryptographic Coprocessor",
+                                "设备类别": "Other Encryption/Decryption",
+                                "修订版 ID": "0",
+                                "PCI 地址编号 (总线: 设备: 功能)": "8:0:2",
+                                "PCI Latency Timer": "0",
+                                "硬件 ID": "PCI\\VEN_1022&DEV_15DF&SUBSYS_88091043&REV_00"
+                            },
+                            "PCI Express": {
+                                "版本": "4.0",
+                                "最大链接位宽": "x16",
+                                "当前链接位宽": "x16",
+                                "最大链接速度": "16.0 GT/s",
+                                "当前链接速度": "8.0 GT/s",
+                                "设备/端口类型": "PCI Express 端点",
+                                "实现的插槽": "否",
+                                "Emergency Power Reduction": "不支持",
+                                "活动状态电源管理 (ASPM) 支持": "L0s and L1",
+                                "活动状态电源管理 (ASPM) 状态": "禁用",
+                                "L0s Exit Latency": "< 64 ns",
+                                "L1 Exit Latency": "< 1 us",
+                                "Maximum Payload Size Supported": "256 bytes",
+                                "Maximum Payload Size": "256 bytes",
+                                "可调整大小的 BAR 支持": "不支持"
+                            },
+                            "系统资源": {
+                                "中断线": "不适用",
+                                "中断引脚": "INTC#",
+                                "内存基址 2": "FCB00000",
+                                "内存基址 5": "FCCFE000"
+                            },
+                            "特征": {
+                                "Bus Mastering": "禁用",
+                                "Running At 66 MHz": "不支持",
+                                "Fast Back-to-Back Transactions": "不支持"
+                            },
+                            "设备驱动程序信息": {
+                                "驱动程序制造商": "Advanced Micro Devices Inc.",
+                                "驱动程序描述": "AMD PSP 10.0 Device",
+                                "驱动程序提供商": "Advanced Micro Devices Inc.",
+                                "驱动程序版本": "5.38.0.0",
+                                "驱动程序日期": "28-Jan-2025",
+                                "设备实例 ID": "PCI\\VEN_1022&DEV_15DF&SUBSYS_88091043&REV_00\\4&3293EFF9&0&0241",
+                                "位置路径": "PCIROOT(0)#PCI(0801)#PCI(0002)"
+                            }
+                        },
+                        "AMD Renoir/Cezanne - USB 3.1 Controller": {
+                            "常规信息": {
+                                "设备名称": [
+                                    "AMD Renoir/Cezanne - USB 3.1 Controller",
+                                    "AMD Renoir/Cezanne - USB 3.1 Controller"
+                                ],
+                                "原始设备名称": [
+                                    "AMD Renoir/Cezanne - USB 3.1 Controller",
+                                    "AMD Renoir/Cezanne - USB 3.1 Controller"
+                                ],
+                                "设备类别": [
+                                    "USB xHCI Controller",
+                                    "USB xHCI Controller"
+                                ],
+                                "修订版 ID": [
+                                    "0",
+                                    "0"
+                                ],
+                                "PCI 地址编号 (总线: 设备: 功能)": [
+                                    "8:0:3",
+                                    "8:0:4"
+                                ],
+                                "PCI Latency Timer": [
+                                    "0",
+                                    "0"
+                                ],
+                                "硬件 ID": [
+                                    "PCI\\VEN_1022&DEV_1639&SUBSYS_87E11043&REV_00",
+                                    "PCI\\VEN_1022&DEV_1639&SUBSYS_87E11043&REV_00"
+                                ]
+                            },
+                            "PCI Express": {
+                                "版本": [
+                                    "4.0",
+                                    "4.0"
+                                ],
+                                "最大链接位宽": [
+                                    "x16",
+                                    "x16"
+                                ],
+                                "当前链接位宽": [
+                                    "x16",
+                                    "x16"
+                                ],
+                                "最大链接速度": [
+                                    "16.0 GT/s",
+                                    "16.0 GT/s"
+                                ],
+                                "当前链接速度": [
+                                    "8.0 GT/s",
+                                    "8.0 GT/s"
+                                ],
+                                "设备/端口类型": [
+                                    "PCI Express 端点",
+                                    "PCI Express 端点"
+                                ],
+                                "实现的插槽": [
+                                    "否",
+                                    "否"
+                                ],
+                                "Emergency Power Reduction": [
+                                    "不支持",
+                                    "不支持"
+                                ],
+                                "活动状态电源管理 (ASPM) 支持": [
+                                    "L0s and L1",
+                                    "L0s and L1"
+                                ],
+                                "活动状态电源管理 (ASPM) 状态": [
+                                    "禁用",
+                                    "禁用"
+                                ],
+                                "L0s Exit Latency": [
+                                    "< 64 ns",
+                                    "< 64 ns"
+                                ],
+                                "L1 Exit Latency": [
+                                    "< 1 us",
+                                    "< 1 us"
+                                ],
+                                "Maximum Payload Size Supported": [
+                                    "256 bytes",
+                                    "256 bytes"
+                                ],
+                                "Maximum Payload Size": [
+                                    "256 bytes",
+                                    "256 bytes"
+                                ],
+                                "可调整大小的 BAR 支持": [
+                                    "不支持",
+                                    "不支持"
+                                ]
+                            },
+                            "系统资源": {
+                                "中断线": [
+                                    "不适用",
+                                    "不适用"
+                                ],
+                                "中断引脚": [
+                                    "INTD#",
+                                    "INTA#"
+                                ],
+                                "内存基址 0": [
+                                    "FCA00000",
+                                    "FC900000"
+                                ]
+                            },
+                            "特征": {
+                                "Bus Mastering": [
+                                    "启用",
+                                    "启用"
+                                ],
+                                "Running At 66 MHz": [
+                                    "不支持",
+                                    "不支持"
+                                ],
+                                "Fast Back-to-Back Transactions": [
+                                    "不支持",
+                                    "不支持"
+                                ],
+                                "支持的 USB 版本": [
+                                    "3.1",
+                                    "3.1"
+                                ]
+                            },
+                            "设备驱动程序信息": {
+                                "驱动程序制造商": [
+                                    "Microsoft",
+                                    "Microsoft"
+                                ],
+                                "驱动程序描述": [
+                                    "USB xHCI Compliant Host Controller",
+                                    "USB xHCI Compliant Host Controller"
+                                ],
+                                "驱动程序提供商": [
+                                    "Microsoft",
+                                    "Microsoft"
+                                ],
+                                "驱动程序版本": [
+                                    "10.0.26100.1591",
+                                    "10.0.26100.1591"
+                                ],
+                                "驱动程序日期": [
+                                    "20-Aug-2024",
+                                    "20-Aug-2024"
+                                ],
+                                "设备实例 ID": [
+                                    "PCI\\VEN_1022&DEV_1639&SUBSYS_87E11043&REV_00\\4&3293EFF9&0&0341",
+                                    "PCI\\VEN_1022&DEV_1639&SUBSYS_87E11043&REV_00\\4&3293EFF9&0&0441"
+                                ],
+                                "位置路径": [
+                                    "PCIROOT(0)#PCI(0801)#PCI(0003)",
+                                    "PCIROOT(0)#PCI(0801)#PCI(0004)"
+                                ]
+                            }
+                        },
+                        "AMD Zen - Audio Processor - HD Audio Controller": {
+                            "常规信息": {
+                                "设备名称": "AMD Zen - Audio Processor - HD Audio Controller",
+                                "原始设备名称": "AMD Zen - Audio Processor - HD Audio Controller",
+                                "设备类别": "High Definition Audio",
+                                "修订版 ID": "0",
+                                "PCI 地址编号 (总线: 设备: 功能)": "8:0:6",
+                                "PCI Latency Timer": "0",
+                                "硬件 ID": "PCI\\VEN_1022&DEV_15E3&SUBSYS_87FB1043&REV_00"
+                            },
+                            "PCI Express": {
+                                "版本": "4.0",
+                                "最大链接位宽": "x16",
+                                "当前链接位宽": "x16",
+                                "最大链接速度": "16.0 GT/s",
+                                "当前链接速度": "8.0 GT/s",
+                                "设备/端口类型": "PCI Express 端点",
+                                "实现的插槽": "否",
+                                "Emergency Power Reduction": "不支持",
+                                "活动状态电源管理 (ASPM) 支持": "L0s and L1",
+                                "活动状态电源管理 (ASPM) 状态": "禁用",
+                                "L0s Exit Latency": "< 64 ns",
+                                "L1 Exit Latency": "< 1 us",
+                                "Maximum Payload Size Supported": "256 bytes",
+                                "Maximum Payload Size": "256 bytes",
+                                "可调整大小的 BAR 支持": "不支持"
+                            },
+                            "系统资源": {
+                                "中断线": "IRQ36",
+                                "中断引脚": "INTC#",
+                                "内存基址 0": "FCCF0000"
+                            },
+                            "特征": {
+                                "Bus Mastering": "启用",
+                                "Running At 66 MHz": "不支持",
+                                "Fast Back-to-Back Transactions": "不支持"
+                            },
+                            "设备驱动程序信息": {
+                                "驱动程序制造商": "Microsoft",
+                                "驱动程序描述": "High Definition Audio Controller",
+                                "驱动程序提供商": "Microsoft",
+                                "驱动程序版本": "10.0.26100.1150",
+                                "驱动程序日期": "03-Jul-2024",
+                                "设备实例 ID": "PCI\\VEN_1022&DEV_15E3&SUBSYS_87FB1043&REV_00\\4&3293EFF9&0&0641",
+                                "位置路径": "PCIROOT(0)#PCI(0801)#PCI(0006)"
+                            }
+                        }
+                    }
+                },
+                "AMD Carrizo FCH - SMBus and ACPI Controller": {
+                    "常规信息": {
+                        "设备名称": "AMD Carrizo FCH - SMBus and ACPI Controller",
+                        "原始设备名称": "AMD Carrizo FCH - SMBus and ACPI Controller",
+                        "设备类别": "SMBus (System Management Bus)",
+                        "修订版 ID": "51",
+                        "PCI 地址编号 (总线: 设备: 功能)": "0:20:0",
+                        "PCI Latency Timer": "0",
+                        "硬件 ID": "PCI\\VEN_1022&DEV_790B&SUBSYS_87E11043&REV_51"
+                    },
+                    "系统资源": {
+                        "中断线": "不适用",
+                        "中断引脚": "不适用"
+                    },
+                    "特征": {
+                        "Bus Mastering": "禁用",
+                        "Running At 66 MHz": "支持",
+                        "Fast Back-to-Back Transactions": "不支持"
+                    },
+                    "设备驱动程序信息": {
+                        "驱动程序制造商": "Advanced Micro Devices, Inc",
+                        "驱动程序描述": "AMD SMBus",
+                        "驱动程序提供商": "Advanced Micro Devices, Inc",
+                        "驱动程序版本": "5.12.0.38",
+                        "驱动程序日期": "17-Apr-2018",
+                        "设备实例 ID": "PCI\\VEN_1022&DEV_790B&SUBSYS_87E11043&REV_51\\3&11583659&0&A0",
+                        "位置路径": "PCIROOT(0)#PCI(1400)"
+                    }
+                },
+                "AMD Promontory/Bixby FCH - LPC Bridge": {
+                    "常规信息": {
+                        "设备名称": "AMD Promontory/Bixby FCH - LPC Bridge",
+                        "原始设备名称": "AMD Promontory/Bixby FCH - LPC Bridge",
+                        "设备类别": "PCI-to-ISA Bridge",
+                        "修订版 ID": "51",
+                        "PCI 地址编号 (总线: 设备: 功能)": "0:20:3",
+                        "PCI Latency Timer": "0",
+                        "硬件 ID": "PCI\\VEN_1022&DEV_790E&SUBSYS_87E11043&REV_51"
+                    },
+                    "系统资源": {
+                        "中断线": "不适用",
+                        "中断引脚": "不适用"
+                    },
+                    "特征": {
+                        "Bus Mastering": "启用",
+                        "Running At 66 MHz": "支持",
+                        "Fast Back-to-Back Transactions": "不支持"
+                    },
+                    "设备驱动程序信息": {
+                        "驱动程序制造商": "Microsoft",
+                        "驱动程序描述": "PCI standard ISA bridge",
+                        "驱动程序提供商": "Microsoft",
+                        "驱动程序版本": "10.0.26100.1150",
+                        "驱动程序日期": "21-Jun-2006",
+                        "设备实例 ID": "PCI\\VEN_1022&DEV_790E&SUBSYS_87E11043&REV_51\\3&11583659&0&A3",
+                        "位置路径": "PCIROOT(0)#PCI(1403)"
+                    }
+                },
+                "AMD Cezanne - Data Fabric: Function 0": {
+                    "常规信息": {
+                        "设备名称": "AMD Cezanne - Data Fabric: Function 0",
+                        "原始设备名称": "AMD Cezanne - Data Fabric: Function 0",
+                        "设备类别": "Host-to-PCI Bridge",
+                        "修订版 ID": "0",
+                        "PCI 地址编号 (总线: 设备: 功能)": "0:24:0",
+                        "PCI Latency Timer": "0",
+                        "硬件 ID": "PCI\\VEN_1022&DEV_166A&SUBSYS_00000000&REV_00"
+                    },
+                    "系统资源": {
+                        "中断线": "不适用",
+                        "中断引脚": "不适用"
+                    },
+                    "特征": {
+                        "Bus Mastering": "禁用",
+                        "Running At 66 MHz": "不支持",
+                        "Fast Back-to-Back Transactions": "不支持"
+                    },
+                    "设备驱动程序信息": {
+                        "驱动程序制造商": "Microsoft",
+                        "驱动程序描述": "PCI standard host CPU bridge",
+                        "驱动程序提供商": "Microsoft",
+                        "驱动程序版本": "10.0.26100.1150",
+                        "驱动程序日期": "21-Jun-2006",
+                        "设备实例 ID": "PCI\\VEN_1022&DEV_166A&SUBSYS_00000000&REV_00\\3&11583659&0&C0",
+                        "位置路径": "PCIROOT(0)#PCI(1800)"
+                    }
+                },
+                "AMD Cezanne - Data Fabric: Function 1": {
+                    "常规信息": {
+                        "设备名称": "AMD Cezanne - Data Fabric: Function 1",
+                        "原始设备名称": "AMD Cezanne - Data Fabric: Function 1",
+                        "设备类别": "Host-to-PCI Bridge",
+                        "修订版 ID": "0",
+                        "PCI 地址编号 (总线: 设备: 功能)": "0:24:1",
+                        "PCI Latency Timer": "0",
+                        "硬件 ID": "PCI\\VEN_1022&DEV_166B&SUBSYS_00000000&REV_00"
+                    },
+                    "系统资源": {
+                        "中断线": "不适用",
+                        "中断引脚": "不适用"
+                    },
+                    "特征": {
+                        "Bus Mastering": "禁用",
+                        "Running At 66 MHz": "不支持",
+                        "Fast Back-to-Back Transactions": "不支持"
+                    },
+                    "设备驱动程序信息": {
+                        "驱动程序制造商": "Microsoft",
+                        "驱动程序描述": "PCI standard host CPU bridge",
+                        "驱动程序提供商": "Microsoft",
+                        "驱动程序版本": "10.0.26100.1150",
+                        "驱动程序日期": "21-Jun-2006",
+                        "设备实例 ID": "PCI\\VEN_1022&DEV_166B&SUBSYS_00000000&REV_00\\3&11583659&0&C1",
+                        "位置路径": "PCIROOT(0)#PCI(1801)"
+                    }
+                },
+                "AMD Cezanne - Data Fabric: Function 2": {
+                    "常规信息": {
+                        "设备名称": "AMD Cezanne - Data Fabric: Function 2",
+                        "原始设备名称": "AMD Cezanne - Data Fabric: Function 2",
+                        "设备类别": "Host-to-PCI Bridge",
+                        "修订版 ID": "0",
+                        "PCI 地址编号 (总线: 设备: 功能)": "0:24:2",
+                        "PCI Latency Timer": "0",
+                        "硬件 ID": "PCI\\VEN_1022&DEV_166C&SUBSYS_00000000&REV_00"
+                    },
+                    "系统资源": {
+                        "中断线": "不适用",
+                        "中断引脚": "不适用"
+                    },
+                    "特征": {
+                        "Bus Mastering": "禁用",
+                        "Running At 66 MHz": "不支持",
+                        "Fast Back-to-Back Transactions": "不支持"
+                    },
+                    "设备驱动程序信息": {
+                        "驱动程序制造商": "Microsoft",
+                        "驱动程序描述": "PCI standard host CPU bridge",
+                        "驱动程序提供商": "Microsoft",
+                        "驱动程序版本": "10.0.26100.1150",
+                        "驱动程序日期": "21-Jun-2006",
+                        "设备实例 ID": "PCI\\VEN_1022&DEV_166C&SUBSYS_00000000&REV_00\\3&11583659&0&C2",
+                        "位置路径": "PCIROOT(0)#PCI(1802)"
+                    }
+                },
+                "AMD Cezanne - Data Fabric: Function 3": {
+                    "常规信息": {
+                        "设备名称": "AMD Cezanne - Data Fabric: Function 3",
+                        "原始设备名称": "AMD Cezanne - Data Fabric: Function 3",
+                        "设备类别": "Host-to-PCI Bridge",
+                        "修订版 ID": "0",
+                        "PCI 地址编号 (总线: 设备: 功能)": "0:24:3",
+                        "PCI Latency Timer": "0",
+                        "硬件 ID": "PCI\\VEN_1022&DEV_166D&SUBSYS_00000000&REV_00"
+                    },
+                    "系统资源": {
+                        "中断线": "不适用",
+                        "中断引脚": "不适用"
+                    },
+                    "特征": {
+                        "Bus Mastering": "禁用",
+                        "Running At 66 MHz": "不支持",
+                        "Fast Back-to-Back Transactions": "不支持"
+                    },
+                    "设备驱动程序信息": {
+                        "驱动程序制造商": "Microsoft",
+                        "驱动程序描述": "PCI standard host CPU bridge",
+                        "驱动程序提供商": "Microsoft",
+                        "驱动程序版本": "10.0.26100.1150",
+                        "驱动程序日期": "21-Jun-2006",
+                        "设备实例 ID": "PCI\\VEN_1022&DEV_166D&SUBSYS_00000000&REV_00\\3&11583659&0&C3",
+                        "位置路径": "PCIROOT(0)#PCI(1803)"
+                    }
+                },
+                "AMD Cezanne - Data Fabric: Function 4": {
+                    "常规信息": {
+                        "设备名称": "AMD Cezanne - Data Fabric: Function 4",
+                        "原始设备名称": "AMD Cezanne - Data Fabric: Function 4",
+                        "设备类别": "Host-to-PCI Bridge",
+                        "修订版 ID": "0",
+                        "PCI 地址编号 (总线: 设备: 功能)": "0:24:4",
+                        "PCI Latency Timer": "0",
+                        "硬件 ID": "PCI\\VEN_1022&DEV_166E&SUBSYS_00000000&REV_00"
+                    },
+                    "系统资源": {
+                        "中断线": "不适用",
+                        "中断引脚": "不适用"
+                    },
+                    "特征": {
+                        "Bus Mastering": "禁用",
+                        "Running At 66 MHz": "不支持",
+                        "Fast Back-to-Back Transactions": "不支持"
+                    },
+                    "设备驱动程序信息": {
+                        "驱动程序制造商": "Microsoft",
+                        "驱动程序描述": "PCI standard host CPU bridge",
+                        "驱动程序提供商": "Microsoft",
+                        "驱动程序版本": "10.0.26100.1150",
+                        "驱动程序日期": "21-Jun-2006",
+                        "设备实例 ID": "PCI\\VEN_1022&DEV_166E&SUBSYS_00000000&REV_00\\3&11583659&0&C4",
+                        "位置路径": "PCIROOT(0)#PCI(1804)"
+                    }
+                },
+                "AMD Cezanne - Data Fabric: Function 5": {
+                    "常规信息": {
+                        "设备名称": "AMD Cezanne - Data Fabric: Function 5",
+                        "原始设备名称": "AMD Cezanne - Data Fabric: Function 5",
+                        "设备类别": "Host-to-PCI Bridge",
+                        "修订版 ID": "0",
+                        "PCI 地址编号 (总线: 设备: 功能)": "0:24:5",
+                        "PCI Latency Timer": "0",
+                        "硬件 ID": "PCI\\VEN_1022&DEV_166F&SUBSYS_00000000&REV_00"
+                    },
+                    "系统资源": {
+                        "中断线": "不适用",
+                        "中断引脚": "不适用"
+                    },
+                    "特征": {
+                        "Bus Mastering": "禁用",
+                        "Running At 66 MHz": "不支持",
+                        "Fast Back-to-Back Transactions": "不支持"
+                    },
+                    "设备驱动程序信息": {
+                        "驱动程序制造商": "Microsoft",
+                        "驱动程序描述": "PCI standard host CPU bridge",
+                        "驱动程序提供商": "Microsoft",
+                        "驱动程序版本": "10.0.26100.1150",
+                        "驱动程序日期": "21-Jun-2006",
+                        "设备实例 ID": "PCI\\VEN_1022&DEV_166F&SUBSYS_00000000&REV_00\\3&11583659&0&C5",
+                        "位置路径": "PCIROOT(0)#PCI(1805)"
+                    }
+                },
+                "AMD Cezanne - Data Fabric: Function 6": {
+                    "常规信息": {
+                        "设备名称": "AMD Cezanne - Data Fabric: Function 6",
+                        "原始设备名称": "AMD Cezanne - Data Fabric: Function 6",
+                        "设备类别": "Host-to-PCI Bridge",
+                        "修订版 ID": "0",
+                        "PCI 地址编号 (总线: 设备: 功能)": "0:24:6",
+                        "PCI Latency Timer": "0",
+                        "硬件 ID": "PCI\\VEN_1022&DEV_1670&SUBSYS_00000000&REV_00"
+                    },
+                    "系统资源": {
+                        "中断线": "不适用",
+                        "中断引脚": "不适用"
+                    },
+                    "特征": {
+                        "Bus Mastering": "禁用",
+                        "Running At 66 MHz": "不支持",
+                        "Fast Back-to-Back Transactions": "不支持"
+                    },
+                    "设备驱动程序信息": {
+                        "驱动程序制造商": "Microsoft",
+                        "驱动程序描述": "PCI standard host CPU bridge",
+                        "驱动程序提供商": "Microsoft",
+                        "驱动程序版本": "10.0.26100.1150",
+                        "驱动程序日期": "21-Jun-2006",
+                        "设备实例 ID": "PCI\\VEN_1022&DEV_1670&SUBSYS_00000000&REV_00\\3&11583659&0&C6",
+                        "位置路径": "PCIROOT(0)#PCI(1806)"
+                    }
+                },
+                "AMD Cezanne - Data Fabric: Function 7": {
+                    "常规信息": {
+                        "设备名称": "AMD Cezanne - Data Fabric: Function 7",
+                        "原始设备名称": "AMD Cezanne - Data Fabric: Function 7",
+                        "设备类别": "Host-to-PCI Bridge",
+                        "修订版 ID": "0",
+                        "PCI 地址编号 (总线: 设备: 功能)": "0:24:7",
+                        "PCI Latency Timer": "0",
+                        "硬件 ID": "PCI\\VEN_1022&DEV_1671&SUBSYS_00000000&REV_00"
+                    },
+                    "系统资源": {
+                        "中断线": "不适用",
+                        "中断引脚": "不适用"
+                    },
+                    "特征": {
+                        "Bus Mastering": "禁用",
+                        "Running At 66 MHz": "不支持",
+                        "Fast Back-to-Back Transactions": "不支持"
+                    },
+                    "设备驱动程序信息": {
+                        "驱动程序制造商": "Microsoft",
+                        "驱动程序描述": "PCI standard host CPU bridge",
+                        "驱动程序提供商": "Microsoft",
+                        "驱动程序版本": "10.0.26100.1150",
+                        "驱动程序日期": "21-Jun-2006",
+                        "设备实例 ID": "PCI\\VEN_1022&DEV_1671&SUBSYS_00000000&REV_00\\3&11583659&0&C7",
+                        "位置路径": "PCIROOT(0)#PCI(1807)"
+                    }
+                }
+            }
+        }
+    },
+    "VIDEO": {
+        "显卡 (GPU)": {
+            "AMD Radeon Vega": {
+                "图形处理器": {
+                    "图形处理器": "AMD Radeon Vega",
+                    "图形处理器代号": "Cezanne",
+                    "显存": "512 MBytes 的 DDR4 SDRAM"
+                },
+                "显卡": {
+                    "显卡": "AMD Cezanne - Internal GPU [ASUS]",
+                    "显卡总线": "PCIe v4.0 x16 (16.0 GT/s) @ x16 (8.0 GT/s)",
+                    "GPU 类型": "Integrated",
+                    "图形 RAMDAC": "Internal DAC(400MHz)",
+                    "视频 BIOS 版本": "017.010.000.029"
+                },
+                "性能": {
+                    "图形处理器频率": "1900.0 MHz",
+                    "显存频率": "1200.0 MHz (有效 2400.0 MHz)",
+                    "显存总线位宽": "128-bit",
+                    "ROP 的数量": "8",
+                    "统一着色器的数量": "448",
+                    "TMU (纹理映射单元) 的数量": "28",
+                    "可调整大小的 BAR (ReBAR) 支持": "不支持",
+                    "硬件 ID": "PCI\\VEN_1002&DEV_1638&SUBSYS_88091043&REV_C9",
+                    "PCI 位置 (总线: 设备: 功能)": "8:00:0"
+                },
+                "设备驱动程序信息": {
+                    "驱动程序制造商": "Advanced Micro Devices, Inc.",
+                    "驱动程序描述": "AMD Radeon(TM) Graphics",
+                    "驱动程序提供商": "Advanced Micro Devices, Inc.",
+                    "驱动程序版本": "31.0.21923.11000",
+                    "AMD 驱动程序包版本": "23.19.23.11-250701a-417877C-AMD-Software-Adrenalin-Edition",
+                    "AMD Software 驱动程序版本": "25.8.1",
+                    "驱动程序日期": "01-Jul-2025",
+                    "DCH/UWD 驱动程序": "不支持",
+                    "设备实例 ID": "PCI\\VEN_1002&DEV_1638&SUBSYS_88091043&REV_C9\\4&3293EFF9&0&0041",
+                    "位置路径": "PCIROOT(0)#PCI(0801)#PCI(0000)"
+                }
+            }
+        }
+    },
+    "MONITOR": {
+        "显示器": {
+            "DELL [Unknown Model: DEL2013]": {
+                "常规信息": {
+                    "显示器名称": "DELL [Unknown Model: DEL2013]",
+                    "显示器名称 (来自制造商)": "DELL D2721H  ",
+                    "序号": "6SHGD04      ",
+                    "生产日期": "周: 37, 年: 2024",
+                    "显示器的硬件 ID": "Monitor\\DEL2013",
+                    "最大高度": "34 cm",
+                    "最大宽度": "60 cm",
+                    "水平刷新率": "30 - 83 kHz",
+                    "垂直刷新率": "56 - 76 Hz",
+                    "最大像素频率": "170 MHz"
+                },
+                "高级参数": {
+                    "输入信号": "数字",
+                    "Gamma Factor": "2.20"
+                },
+                "DPMS 模式": {
+                    "Standby": "不支持",
+                    "Suspend": "不支持",
+                    "Active Off": "支持",
+                    "Standard Colour Space (sRGB) Default": "不支持",
+                    "Preferred Timing Mode": "支持",
+                    "Default GTF (Continuous Frequency)": "不支持",
+                    "DFP 1.x Compatible": "否"
+                },
+                "支持的视频模式": {
+                    "1152 x 864": "75 Hz",
+                    "1280 x 1024": "60 Hz",
+                    "1600 x 900": "60 Hz",
+                    "1920 x 1080": [
+                        "60 Hz",
+                        "598 x 336 mm, 像素频率 148.50 MHz"
+                    ]
+                },
+                "Chromaticity Coordinates": {
+                    "Red [x,y]": " 0.6396, 0.3398",
+                    "Green [x,y]": " 0.2959, 0.6221",
+                    "Blue [x,y]": " 0.1523, 0.0527",
+                    "White [x,y]": " 0.3135, 0.3291"
+                },
+                "Color Gamut": {
+                    "sRGB Coverage": "105.410 %",
+                    "AdobeRGB Coverage": "78.142 %",
+                    "DCI-P3 Coverage": "77.705 %",
+                    "NTSC Coverage": "74.660 %",
+                    "BT.2020 Coverage": "55.748 %",
+                    "HDR Support": "不支持",
+                    "HDR10+ Support": "不支持",
+                    "AMD FreeSync Support": "不支持",
+                    "NVIDIA G-Sync Support": "不支持",
+                    "HDMI AdaptiveSync Support": "不支持",
+                    "HDMI Auto Low-Latency Mode": "不支持",
+                    "Dolby Vision Support": "不支持",
+                    "VESA AdaptiveSync Support": "不支持"
+                },
+                "Display Audio": {
+                    "Display Audio Support": "不支持"
+                },
+                "设备驱动程序信息": {
+                    "驱动程序制造商": "Microsoft",
+                    "驱动程序描述": "Generic PnP Monitor",
+                    "驱动程序提供商": "Microsoft",
+                    "驱动程序版本": "10.0.26100.1150",
+                    "驱动程序日期": "21-Jun-2006",
+                    "设备实例 ID": "DISPLAY\\DEL2013\\5&C3B1AE0&0&UID260"
+                }
+            }
+        }
+    },
+    "DRIVES": {
+        "磁盘驱动器": {
+            "NVMe 驱动器": {
+                "GLOWAY YCT512NVMe-M.2/80": {
+                    "常规信息": {
+                        "磁盘控制器": "NVMe (PCIe x4 16.0 GT/s @ x4 8.0 GT/s)",
+                        "主机控制器": "Maxio Technology MAP1602 NVMe SSD Controller",
+                        "驱动器型号": "GLOWAY YCT512NVMe-M.2/80",
+                        "驱动器序号": "202305180580",
+                        "驱动器固件修订版": "SN11274",
+                        "支持的 NVMe 版本": "v1.4",
+                        "驱动器容量": "488,386 MiB (512 GB)",
+                        "Drive Capacity [MB]": "488386",
+                        "SCSI 地址": "1:0:0:0",
+                        "驱动器号": "C:, D:",
+                        "Maximum Power Consumption": "6.50 W",
+                        "Power States Supported": "PS0, PS1, PS2, PS3, PS4"
+                    },
+                    "功能": {
+                        "Volatile Write Cache": "存在",
+                        "Compare Command": "支持",
+                        "Write Uncorrectable Command": "支持",
+                        "Dataset Management": "支持",
+                        "Write Zeroes": "支持",
+                        "Save field set to a non-zero value": "支持",
+                        "Reservations": "不支持",
+                        "Timestamp": "不支持",
+                        "Autonomous Power State Transitions": "支持",
+                        "Host Memory Buffer (HMB) Capability": "支持",
+                        "Host Memory Buffer (HMB) Minimum Size": "32 MiB",
+                        "Host Memory Buffer (HMB) Preferred Size": "32 MiB",
+                        "Host Memory Buffer (HMB) Status": "启用",
+                        "Host Memory Buffer (HMB) Enabled Size": "32 MiB"
+                    },
+                    "I/O Command Sets": {
+                        "NVM Command Set": "不支持",
+                        "Key Value (KV) Command Set": "不支持",
+                        "Zoned Namespace (ZNS) Command Set": "不支持",
+                        "Subsystem Local Memory Command Set": "不支持",
+                        "Computational Programs Namespace Command Set": "不支持"
+                    },
+                    "自我监控、分析和报告技术 (S.M.A.R.T.)": {
+                        "可用备用空间低于阈值": "正常",
+                        "温度超过临界阈值": "正常",
+                        "设备可靠性降低": "正常",
+                        "介质处于只读模式": "正常",
+                        "易失性内存备份设备故障": "正常",
+                        "磁盘温度": "43 ℃",
+                        "警告温度阈值": "90 ℃",
+                        "临界温度阈值": "95 ℃",
+                        "高于警告温度阈值的时间": "0 分钟",
+                        "高于临界温度阈值的时间": "0 分钟",
+                        "可用备用容量": "100%",
+                        "设备健康": "70%",
+                        "通电计数": "88",
+                        "通电时间": "27399 小时",
+                        "不安全关机": "27",
+                        "介质错误": "0",
+                        "主机读取总计": "186.58 TiB",
+                        "主机写入总计": "112.92 TiB"
+                    }
+                }
+            }
+        }
+    },
+    "SOUND": {
+        "音频": {
+            "ATI/AMD Renoir/Cezanne - Display HD Audio Controller": {
+                "声卡": "ATI/AMD Renoir/Cezanne - Display HD Audio Controller",
+                "音频控制器的硬件 ID": "PCI\\VEN_1002&DEV_1637&SUBSYS_88091043&REV_00",
+                "高清晰音频编解码器": "ATi RADEON HDMI",
+                "音频编解码器的硬件 ID": "HDAUDIO\\FUNC_01&VEN_1002&DEV_AA01&SUBSYS_00AA0100&REV_1007",
+                "设备驱动程序信息": {
+                    "驱动程序制造商": "Advanced Micro Devices",
+                    "驱动程序描述": "AMD High Definition Audio Device",
+                    "驱动程序提供商": "Advanced Micro Devices",
+                    "驱动程序版本": "10.0.1.38",
+                    "驱动程序日期": "26-Apr-2024",
+                    "设备实例 ID": "HDAUDIO\\FUNC_01&VEN_1002&DEV_AA01&SUBSYS_00AA0100&REV_1007\\5&16EAB55C&0&0001"
+                }
+            },
+            "AMD Zen - Audio Processor - HD Audio Controller": {
+                "声卡": "AMD Zen - Audio Processor - HD Audio Controller",
+                "音频控制器的硬件 ID": "PCI\\VEN_1022&DEV_15E3&SUBSYS_87FB1043&REV_00",
+                "高清晰音频编解码器": "RealTek ALC897",
+                "音频编解码器的硬件 ID": "HDAUDIO\\FUNC_01&VEN_10EC&DEV_0897&SUBSYS_104387FB&REV_1004",
+                "设备驱动程序信息": {
+                    "驱动程序制造商": "Realtek Semiconductor Corp.",
+                    "驱动程序描述": "Realtek High Definition Audio",
+                    "驱动程序提供商": "Realtek Semiconductor Corp.",
+                    "驱动程序版本": "6.0.9273.1",
+                    "驱动程序日期": "25-Nov-2021",
+                    "设备实例 ID": "HDAUDIO\\FUNC_01&VEN_10EC&DEV_0897&SUBSYS_104387FB&REV_1004\\5&30B510CE&0&0001"
+                }
+            }
+        }
+    },
+    "NETWORK": {
+        "网络": {
+            "RealTek Semiconductor RTL8168/8111 PCI-E Gigabit Ethernet NIC": {
+                "常规信息": {
+                    "网卡": "RealTek Semiconductor RTL8168/8111 PCI-E Gigabit Ethernet NIC",
+                    "供应商描述": "Realtek PCIe GbE Family Controller",
+                    "MAC 地址": "08-BF-B8-1A-2C-F8"
+                },
+                "功能": {
+                    "最大链接速度": "1 Gbps",
+                    "当前链接速度": "100 Mbps",
+                    "发送缓冲区大小": "193792 Bytes",
+                    "接收缓冲区大小": "775168 Bytes",
+                    "硬件 ID": "PCI\\VEN_10EC&DEV_8168&SUBSYS_86771043&REV_15"
+                },
+                "设备驱动程序信息": {
+                    "驱动程序制造商": "Realtek",
+                    "驱动程序描述": "Realtek PCIe GbE Family Controller",
+                    "驱动程序提供商": "Realtek",
+                    "驱动程序版本": "10.75.324.2025",
+                    "驱动程序日期": "24-Mar-2025",
+                    "设备实例 ID": "PCI\\VEN_10EC&DEV_8168&SUBSYS_86771043&REV_15\\6&C6F3879&0&00000211",
+                    "位置路径": "PCIROOT(0)#PCI(0201)#PCI(0002)#PCI(0000)#PCI(0000)"
+                }
+            }
+        }
+    },
+    "PORTS": {
+        "端口": {
+            "USB": {
+                "AMD USB 3.10 可扩展主机控制器 - 1.10 (Microsoft)": {
+                    "Root Hub": {
+                        "[Port7] : SiGma Micro, PID=0034": {
+                            "设备信息": {
+                                "设备制造商": "SIGMACHIP",
+                                "产品名称": "Usb Mouse",
+                                "序号": "不适用",
+                                "支持的 USB 版本": "1.10",
+                                "USB Speed Capable": "USB 1.1 Low-speed",
+                                "USB Speed Connected": "USB 1.1 Low-speed",
+                                "Maximum Current": "100 mA",
+                                "驱动程序描述": "USB 输入设备",
+                                "硬件 ID": "USB\\VID_1C4F&PID_0034"
+                            },
+                            "设备驱动程序信息": {
+                                "驱动程序制造商": "Microsoft",
+                                "驱动程序描述": "USB Input Device",
+                                "驱动程序提供商": "Microsoft",
+                                "驱动程序版本": "10.0.26100.1150",
+                                "驱动程序日期": "21-Jun-2006",
+                                "设备实例 ID": "USB\\VID_1C4F&PID_0034\\6&25074F63&0&7",
+                                "位置路径": "PCIROOT(0)#PCI(0201)#PCI(0000)#USBROOT(0)#USB(7)"
+                            }
+                        },
+                        "[Port8] : China Resource Semico, PID=2124": {
+                            "设备信息": {
+                                "设备制造商": "不适用",
+                                "产品名称": "USB Keyboard",
+                                "序号": "不适用",
+                                "支持的 USB 版本": "1.10",
+                                "USB Speed Capable": "USB 1.1 Low-speed",
+                                "USB Speed Connected": "USB 1.1 Low-speed",
+                                "Maximum Current": "98 mA",
+                                "驱动程序描述": "USB Composite Device",
+                                "硬件 ID": "USB\\VID_1A2C&PID_2124"
+                            },
+                            "设备驱动程序信息": {
+                                "驱动程序制造商": "Microsoft",
+                                "驱动程序描述": "USB Composite Device",
+                                "驱动程序提供商": "Microsoft",
+                                "驱动程序版本": "10.0.26100.1301",
+                                "驱动程序日期": "21-Jun-2006",
+                                "设备实例 ID": "USB\\VID_1A2C&PID_2124\\6&25074F63&0&8",
+                                "位置路径": "PCIROOT(0)#PCI(0201)#PCI(0000)#USBROOT(0)#USB(8)"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="SecondWebFormApplication.Site" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style>
+        .header{ background:#333; color:white; padding:10px; font-size:20px; }
+        .container{ display:flex; }
+        .sidebar{ width:160px; background:#eee; padding:10px; min-height:300px; }
+        .main{ flex:1; padding:10px; }
+        .footer{ background:#333; color:white; text-align:center; padding:8px; margin-top:10px; }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <%-- 头部导航，所有页面共用 --%>
+        <div class="header">
+            WebForms 练习系统
+            <asp:Label ID="lblLoginUser" runat="server" CssClass="user-info">未登录</asp:Label>
+        </div>
+        <div class="container">
+            <%-- 侧边栏菜单 --%>
+            <div class="sidebar">
+                <p><a href="LoginDemo.aspx">登录页面</a></p>
+                <p><a href="ValidatorDemo.aspx">表单验证</a></p>
+                <p><a href="MasterChild.aspx">母版子页面</a></p>
+            </div>
+            <%-- 占位符：子页面内容放这里 --%>
+            <div class="main">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <%-- 底部版权，所有页面共用 --%>
+        <div class="footer">©2026 练习项目</div>
+    </form>
+</body>
+</html>

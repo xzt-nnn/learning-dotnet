@@ -1,0 +1,24 @@
+﻿@model SecondMVCDemo.Models.City
+@{
+    Layout = null;//页面完全独立，全部 HTML 自己写,不依赖_layout.cshtml
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>强类型·Model</title>
+</head>
+<body>
+    @*ViewBag是MVC里控制器给视图传数据的动态对象*@
+    <h2>欢迎来到MVC纯净版页面</h2>
+    <p>省份：@ViewBag.Province</p>
+    <p>城市：@ViewBag.MyCityName</p>
+    @*一个视图只能接受一个Model对象，不能传多个*@
+    <h2>城市信息</h2>
+    <p>编号：@Model.Id</p>
+    <p>省份：@Model.Province</p>
+    <p>城市：@Model.Name</p>
+
+
+</body>
+</html>

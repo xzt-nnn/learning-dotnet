@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "出错了";
+    bool isBusiness = (bool)ViewData["IsBusiness"];
+}
+
+@if (isBusiness)
+{
+    <h2 style="color:orange">业务提示</h2>
+    <p>错误码：@ViewData["ErrCode"]</p>
+    <p>提示：@ViewData["ErrMsg"]</p>
+}
+else
+{
+    <h2 style="color:red">系统异常</h2>
+    <p>@ViewData["ErrMsg"]</p>
+    <pre>@ViewData["ErrStack"]</pre>
+}
+<a href="@Url.Action("Index")">返回首页</a>

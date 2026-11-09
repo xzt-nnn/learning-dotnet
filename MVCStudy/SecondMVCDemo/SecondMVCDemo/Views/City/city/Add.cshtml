@@ -1,0 +1,184 @@
+﻿@model SecondMVCDemo.Models.City
+@{
+    Layout = null;
+    ViewBag.Title = "新增城市";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewBag.Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            background-color: #f5f7fa;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 420px;
+            padding: 32px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h2 {
+            margin-bottom: 22px;
+            font-size: 22px;
+            color: #2d3748;
+            text-align: center;
+        }
+
+        .alert {
+            margin-bottom: 18px;
+            padding: 10px 14px;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .alert-error {
+            background-color: #fff5f5;
+            border: 1px solid #feb2b2;
+            color: #c53030;
+        }
+
+        .alert-success {
+            background-color: #f0fff4;
+            border: 1px solid #9ae6b4;
+            color: #276749;
+        }
+
+        .form-item {
+            margin-bottom: 18px;
+        }
+
+        .form-item label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 14px;
+            color: #4a5568;
+        }
+
+        .input {
+            width: 100%;
+            padding: 10px 12px;
+            font-size: 14px;
+            border: 1px solid #cbd5e0;
+            border-radius: 6px;
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .input:focus {
+            border-color: #4a5568;
+            box-shadow: 0 0 0 3px rgba(74, 85, 104, 0.15);
+        }
+
+        .field-error {
+            display: block;
+            margin-top: 6px;
+            font-size: 13px;
+            color: #c53030;
+        }
+
+        .btn {
+            width: 100%;
+            margin-top: 8px;
+            padding: 11px 0;
+            font-size: 15px;
+            color: #fff;
+            background-color: #4a5568;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #2d3748;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>新增城市</h2>
+
+        @if (ViewBag.fail != null)
+        {
+            <div class="alert alert-error">@ViewBag.fail</div>
+        }
+        @if (ViewBag.success != null)
+        {
+            <div class="alert alert-success">@ViewBag.success</div>
+        }
+
+        <div id="formError" class="alert alert-error" style="display: none;"></div>
+
+        @using (Html.BeginForm(null, null, FormMethod.Post, new { @class = "city-form", id = "cityForm" }))
+        {
+            <!-- 省份 -->
+            <div class="form-item">
+                <label>省份</label>
+                @Html.TextBoxFor(m => m.Province, new { @class = "input", placeholder = "请输入省份", required = "required", autocomplete = "off" })
+                @Html.ValidationMessageFor(m => m.Province, "", new { @class = "field-error" })
+            </div>
+
+            <!-- 城市名称 -->
+            <div class="form-item">
+                <label>城市名称</label>
+                @Html.TextBoxFor(m => m.Name, new { @class = "input", placeholder = "请输入城市名称", required = "required", autocomplete = "off" })
+                @Html.ValidationMessageFor(m => m.Name, "", new { @class = "field-error" })
+            </div>
+
+            <button type="submit" class="btn">提交</button>
+        }
+    </div>
+
+    <script>
+        (function () {
+            var form = document.getElementById("cityForm");
+            var errorBox = document.getElementById("formError");
+
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                var data = new URLSearchParams();
+                data.append("Province", form.querySelector('[name="Province"]').value);
+                data.append("Name", form.querySelector('[name="Name"]').value);
+
+                fetch("@Url.Action("addCity", "City")", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8" },
+                    body: data.toString()
+                })
+                .then(function (res) { return res.json(); })
+                .then(function (result) {
+                    if (result.success) {
+                        window.location.href = "@Url.Action("CityList", "City")";
+                    } else {
+                        errorBox.textContent = result.message;
+                        errorBox.style.display = "block";
+                    }
+                })
+                .catch(function () {
+                    errorBox.textContent = "添加失败：网络或服务器异常";
+                    errorBox.style.display = "block";
+                });
+            });
+        })();
+    </script>
+</body>
+</html>

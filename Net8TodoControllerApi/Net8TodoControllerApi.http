@@ -1,0 +1,6 @@
+@Net8TodoControllerApi_HostAddress = http://localhost:5129
+
+GET {{Net8TodoControllerApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,190 @@
+﻿﻿@model SecondMVCDemo.Models.PageResult<SecondMVCDemo.Models.City>
+@{
+    Layout = null;
+    ViewBag.Title = "City";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+
+        body {
+            padding: 30px;
+            background-color: #f5f7fa;
+        }
+
+        h2 {
+            color: #2d3748;
+            margin-bottom: 18px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #ffffff;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+        }
+
+        th, td {
+            padding: 10px 14px;
+            border: 1px solid #e2e8f0;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4a5568;
+            color: #fff;
+        }
+
+        tr:hover {
+            background-color: #f7fafc;
+        }
+
+        .pager {
+            margin-top: 18px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            color: #4a5568;
+            font-size: 14px;
+        }
+
+        .pager .summary {
+            margin-right: 6px;
+        }
+
+        .pager a, .pager .page-current {
+            display: inline-block;
+            min-width: 32px;
+            padding: 5px 10px;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+            border-radius: 4px;
+            background: #fff;
+            color: #4a5568;
+            text-decoration: none;
+        }
+
+        .pager a:hover {
+            background-color: #edf2f7;
+        }
+
+        .pager .page-current {
+            background-color: #4a5568;
+            border-color: #4a5568;
+            color: #fff;
+        }
+
+        .page-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 18px;
+        }
+
+        .page-header h2 {
+            margin-bottom: 0;
+        }
+
+        .btn-add {
+            display: inline-block;
+            padding: 8px 16px;
+            font-size: 14px;
+            color: #fff;
+            background-color: #4a5568;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+
+        .btn-add:hover {
+            background-color: #2d3748;
+        }
+
+        .btn-view {
+            display: inline-block;
+            padding: 4px 12px;
+            font-size: 13px;
+            color: #2b6cb0;
+            background-color: #ebf8ff;
+            border: 1px solid #bee3f8;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+
+        .btn-view:hover {
+            background-color: #bee3f8;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-header">
+        <h2>City</h2>
+        <a class="btn-add" href="@Url.Action("addCity", "City")">+ 添加城市</a>
+    </div>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>省份</th>
+            <th>城市</th>
+            <th>操作</th>
+        </tr>
+        @foreach (var item in Model.Items)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Province</td>
+                <td>@item.Name</td>
+                <td>
+                    <a class="btn-view" href="@Url.Action("detailCity", new { id = item.Id })">查看详情</a>
+                    <a class="btn-view" href="@Url.Action("updateCity", new { id = item.Id })">编辑</a>
+                    <a class="btn-view" href="@Url.Action("deleteCity", new { id = item.Id })">删除</a>
+                </td>
+            </tr>
+        }
+    </table>
+
+    @if (Model.TotalCount == 0)
+    {
+        <div class="pager">暂无数据</div>
+    }
+    else
+    {
+        <div class="pager">
+            <span class="summary">第 @Model.PageIndex / @Model.TotalPages 页，共 @Model.TotalCount 条</span>
+
+            @if (Model.PageIndex > 1)
+            {
+                <a href="@Url.Action("CityList", new { pageIndex = Model.PageIndex - 1, pageSize = Model.PageSize })">上一页</a>
+            }
+
+            @for (int i = 1; i <= Model.TotalPages; i++)
+            {
+                if (i == Model.PageIndex)
+                {
+                    <span class="page-current">@i</span>
+                }
+                else
+                {
+                    <a href="@Url.Action("CityList", new { pageIndex = i, pageSize = Model.PageSize })">@i</a>
+                }
+            }
+
+            @if (Model.PageIndex < Model.TotalPages)
+            {
+                <a href="@Url.Action("CityList", new { pageIndex = Model.PageIndex + 1, pageSize = Model.PageSize })">下一页</a>
+            }
+        </div>
+    }
+</body>
+</html>

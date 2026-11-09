@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "MsgBoard";
+    var msgList = (List<string>)Session["MsgList"];
+}
+
+<h2>MsgBoard</h2>
+
+<form method="post">
+    <input type="text" name="msg"/>
+    <button type="submit">提交留言</button>
+</form>
+<hr />
+<h4>留言列表</h4>
+@foreach(var item in msgList)
+            {
+                //安全：@自动转义
+                @*<p>@item</p>*@
+
+                //危险：@Html.Raw放开就会存储型XSS
+                <p>@Html.Raw(item)</p>
+            }
+

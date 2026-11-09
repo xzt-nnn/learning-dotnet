@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "首页";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>测试 ViewBag / ViewData 跳转丢失演示</h2>
+
+<p>ViewBag.Msg：@ViewBag.Msg</p>
+<p>ViewData["Msg2"]：@ViewData["Msg2"]</p>
+<p>TempData["Msg3"]：@TempData["Msg3"]</p>
+
+@if (TempData["Success"] != null)
+{
+    <div style="color:green">@TempData["Success"]</div>
+}
+
+<hr />
+<a href="@Url.Action("TestRedirect")">点我：跳转测试</a>
+<br />
+<a href="@Url.Action("AddUser")">去新增用户（模型校验）</a>
+
+@section Scripts{
+    <script>
+        console.log("页面脚本");
+    </script>
+}
