@@ -1,4 +1,6 @@
-﻿using System.Web;
+﻿using Ef6MvcDemo.Common;
+using Ef6MvcDemo.Filters;
+using System.Web;
 using System.Web.Mvc;
 
 namespace Ef6MvcDemo
@@ -7,7 +9,10 @@ namespace Ef6MvcDemo
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
-            filters.Add(new HandleErrorAttribute());
+            //filters.Add(new HandleErrorAttribute());
+            filters.Add(new GlobalExceptionFilter());
+           
+
         }
     }
 }

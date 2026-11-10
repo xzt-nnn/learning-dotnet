@@ -1,0 +1,99 @@
+﻿@{
+    ViewBag.Title = "统一返回格式演示";
+}
+
+<h2>统一返回格式 ResultModel 演示</h2>
+
+<div class="mb-3">
+    <button id="btn-success" class="btn btn-primary">查询存在的用户（成功）</button>
+    <button id="btn-notfound" class="btn btn-warning">查询不存在的用户（404）</button>
+    <button id="btn-list" class="btn btn-info">查询列表</button>
+    <button id="btn-error" class="btn btn-danger">触发异常（500）</button>
+</div>
+
+<div id="summary" class="alert" style="display:none;"></div>
+
+<h4>原始 JSON 返回</h4>
+<pre id="raw" class="bg-light border p-2" style="min-height:120px;"></pre>
+
+<h4>解析后的数据</h4>
+<table class="table table-bordered" id="table" style="display:none;">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>UserName</th>
+            <th>Phone</th>
+            <th>CreateTime</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+@section scripts {
+    <script>
+    //统一请求方法，集中处理 Code 判定
+    function callApi(url) {
+        $.ajax({
+            url: url,
+            type: 'GET',
+            dataType: 'json',
+            success: function (res) {
+                //1.先展示原始返回，方便对照 Code / Message / Data 结构
+                $('#raw').text(JSON.stringify(res, null, 2));
+
+                //2.统一按 Code 判断业务结果
+                var $summary = $('#summary');
+                var $table = $('#table');
+                $table.hide().find('tbody').empty();
+
+                if (res.Code === 0) {
+                    $summary.removeClass('alert-danger').addClass('alert-success')
+                            .text('成功：' + res.Message).show();
+
+                    //Data 可能是对象，也可能是数组，这里统一转成数组渲染
+                    var rows = Array.isArray(res.Data) ? res.Data
+                             : (res.Data ? [res.Data] : []);
+                    if (rows.length > 0) {
+                        $.each(rows, function (i, item) {
+                            $table.find('tbody').append(
+                                '<tr>' +
+                                '<td>' + item.Id + '</td>' +
+                                '<td>' + item.UserName + '</td>' +
+                                '<td>' + (item.Phone || '') + '</td>' +
+                                '<td>' + formatDate(item.CreateTime) + '</td>' +
+                                '</tr>');
+                        });
+                        $table.show();
+                    }
+                } else {
+                    $summary.removeClass('alert-success').addClass('alert-danger')
+                            .text('业务失败（Code=' + res.Code + '）：' + res.Message).show();
+                }
+            },
+            error: function (xhr) {
+                //走到这里说明连 JSON 都没拿到，属于传输层/未处理异常
+                $('#summary').removeClass('alert-success').addClass('alert-danger')
+                    .text('请求失败：HTTP ' + xhr.status).show();
+                $('#raw').text(xhr.responseText);
+            }
+        });
+    }
+
+    //MVC 的 JavaScriptSerializer 会把 DateTime 序列化成 \/Date(1699999999999)\/，这里转成可读格式
+    function formatDate(value) {
+        if (!value) return '';
+        var m = /\/Date$(\d+)$\//.exec(value);
+        if (m) {
+            return new Date(parseInt(m[1], 10)).toLocaleString();
+        }
+        return value;
+    }
+
+    $(function () {
+        $('#btn-success').click(function () { callApi('/User/GetUserJson?id=2'); });
+        $('#btn-notfound').click(function () { callApi('/User/GetUserJson?id=99999'); });
+        $('#btn-list').click(function () { callApi('/User/UserListJson'); });
+        $('#btn-error').click(function () { callApi('/User/TestError'); });
+    });
+    </script>
+}

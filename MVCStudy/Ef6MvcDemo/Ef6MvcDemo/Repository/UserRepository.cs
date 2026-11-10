@@ -1,7 +1,9 @@
 ﻿using Ef6MvcDemo.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
 
 namespace Ef6MvcDemo.Repository
@@ -19,7 +21,7 @@ namespace Ef6MvcDemo.Repository
             _db = db;
         }
 
-        public User AddUser(User user)
+        public async Task<User> AddUser(User user)
         {
             //用户名已存在则不新增
             if (_db.Users.Any(u => u.UserName == user.UserName))
@@ -29,29 +31,31 @@ namespace Ef6MvcDemo.Repository
 
             _db.Users.Add(user);
             //真正提交到数据库，少了这句数据不会入库
-            _db.SaveChanges();
+            await _db.SaveChangesAsync();
             return user;
         }
 
-        public void DeleteUser(User user)
+        public async Task DeleteUser(User user)
         {
             _db.Users.Remove(user);
+            await _db.SaveChangesAsync();
         }
 
-        public User Edit(User user)
+        public async Task<User> Edit(User user)
         {
-            _db.Entry(user).State = System.Data.Entity.EntityState.Modified;
+            _db.Entry(user).State = EntityState.Modified;
+            await _db.SaveChangesAsync();
             return user;
         }
 
-        public User GetById(int id)
+        public async Task<User> GetById(int id)
         {
-           return _db.Users.Find(id);
+           return await _db.Users.FindAsync(id);
         }
 
-        public List<User> userList()
+        public async Task<List<User>> userList()
         {
-            return _db.Users.ToList();
+            return await _db.Users.AsNoTracking().ToListAsync();
         }
     }
 }

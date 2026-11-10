@@ -5,8 +5,10 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using System.Web.Http;
 using Autofac;
 using Autofac.Integration.Mvc;
+using Ef6MvcDemo.App_Start;
 using Ef6MvcDemo.Models;
 using Ef6MvcDemo.Repository;
 using Ef6MvcDemo.Service;
@@ -18,6 +20,8 @@ namespace Ef6MvcDemo
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
+            //Web API 路由必须在 MVC 路由之前注册，否则 /api/xxx 会被 MVC 默认路由抢走
+            GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);

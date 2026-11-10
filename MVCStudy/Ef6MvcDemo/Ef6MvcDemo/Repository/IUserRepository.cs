@@ -9,13 +9,13 @@ namespace Ef6MvcDemo.Repository
 {
     public interface IUserRepository
     {
-        List<User> userList();
-        User GetById(int id);
+        Task<List<User>> userList();
+        Task<User> GetById(int id);
 
-        User AddUser(User user);
+        Task<User> AddUser(User user);
 
-        User Edit(User user);
+        Task<User> Edit(User user);
 
-        void DeleteUser(User user);
+        Task DeleteUser(User user);
     }
 }
