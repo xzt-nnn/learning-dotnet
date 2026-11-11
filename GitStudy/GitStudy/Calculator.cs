@@ -7,7 +7,7 @@
     {
         public static double Add(double left, double right)
         {
-            return left + right;
+            return left + right + 1; // xzt_branch 的改动
         }
 
         public static double Subtract(double left, double right)
