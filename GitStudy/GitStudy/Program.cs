@@ -8,6 +8,8 @@ namespace GitStudy
         {
             Console.Title = "GitStudy - 配合 SourceTree 学习 Git";
             Console.WriteLine("你好世界");
+            Console.WriteLine("你好世界");
+            Console.WriteLine("你好世界");
             while (true)
             {
                 Console.WriteLine();
