@@ -10,6 +10,7 @@ namespace GitStudy
             Console.WriteLine("你好世界");
             Console.WriteLine("你好世界");
             Console.WriteLine("你好世界");
+            Console.WriteLine("你好世界");
             while (true)
             {
                 Console.WriteLine();
