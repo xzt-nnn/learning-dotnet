@@ -1,0 +1,31 @@
+# 编译输出
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# 生成的文件
+*.dll
+*.exe
+*.pdb
+*.mdb
+*.cache
+*.log
+
+# NuGet
+packages/
+*.nupkg
+*.nuget.props
+*.nuget.targets
+
+# SourceTree / 系统
+*.orig
+Thumbs.db
+desktop.ini
+.DS_Store
