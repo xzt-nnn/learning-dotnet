@@ -10,6 +10,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <br />
             <asp:DropDownList ID="ddlCity" runat="server"></asp:DropDownList>
             <asp:Button ID="btnSubmit" runat="server" Text="提交" OnClick="btnSubmit_Click" />
             <br />
