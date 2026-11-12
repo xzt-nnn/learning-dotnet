@@ -41,10 +41,20 @@ namespace Ef6MvcDemo.Controllers
         //}
 
         //========== 改造后（异步） ==========
-        public async Task<ActionResult> Index()
+        //public async Task<ActionResult> Index()
+        //{
+        //    var list = await _userService.userList();
+        //    return View(list);
+        //}
+
+        //========== 加入分页后 ==========
+        public async Task<ActionResult> Index(int page = 1, int pageSize = 10, string keyword = null)
         {
-            var list = await _userService.userList();
-            return View(list);
+            //防止手动改 URL 传入过大的 pageSize 拖垮数据库
+            if (pageSize < 1 || pageSize > 100) pageSize = 10;
+
+            var result = await _userService.UserListPagedAsync(page, pageSize, keyword);
+            return View(result);
         }
 
         //========== 改造前（同步） ==========
@@ -54,9 +64,12 @@ namespace Ef6MvcDemo.Controllers
         //}
 
         //========== 改造后（异步） ==========
-        public async Task<ActionResult> GetUser(int id)
+        //id 改为可空：URL 里没带 id 时 MVC 不会抛异常，而是走进 id == null 的分支
+        public async Task<ActionResult> GetUser(int? id)
         {
-            var user = await _userService.GetUser(id);
+            if (id == null) return HttpNotFound();
+
+            var user = await _userService.GetUser(id.Value);
             if (user == null) return HttpNotFound();
             return View(user);
         }
@@ -210,6 +223,53 @@ namespace Ef6MvcDemo.Controllers
             return Success(user, "查询成功");
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<ActionResult> BatchDelete(List<int> ids, int page = 1, int pageSize = 10, string keyword = null)
+        {
+            int count = await _userService.BatchDeleteAsync(ids);
+
+            TempData["Msg"] = count > 0
+                ? string.Format("已删除 {0} 条记录", count)
+                : "没有选中任何记录";
+
+            //删完回到原来的页码和搜索条件
+            return RedirectToAction("Index", new { page = page, pageSize = pageSize, keyword = keyword });
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<ActionResult> UploadAvatar(int id, HttpPostedFileBase file)
+        {
+            if (file == null || file.ContentLength <= 0)
+            {
+                TempData["Msg"] = "请选择要上传的图片";
+                return RedirectToAction("GetUser", new { id = id });
+            }
+
+            //物理路径由表现层提供，Service 不依赖 HttpContext
+            string saveDir = Server.MapPath("~/Uploads/Avatar");
+
+            try
+            {
+                await _userService.UploadAvatarAsync(id, file.InputStream, file.FileName, file.ContentLength, saveDir);
+                TempData["Msg"] = "头像上传成功";
+            }
+            catch (ArgumentException ex)
+            {
+                //业务校验失败，直接把消息给用户
+                TempData["Msg"] = ex.Message;
+            }
+            catch (Exception ex)
+            {
+                //系统异常记日志，不要暴露细节
+                LogHelper.Error("上传头像失败", ex);
+                TempData["Msg"] = "上传失败，请稍后重试";
+            }
+
+            return RedirectToAction("GetUser", new { id = id });
+        }
+
         //AJAX 测试 2：查询列表
         //========== 改造前（同步） ==========
         //[HttpGet]
@@ -233,5 +293,7 @@ namespace Ef6MvcDemo.Controllers
         {
             throw new Exception("测试统一异常返回");
         }
+
+
     }
 }

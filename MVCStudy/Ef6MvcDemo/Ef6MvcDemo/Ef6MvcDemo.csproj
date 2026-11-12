@@ -232,6 +232,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\MyDbContext.cs" />
+    <Compile Include="Models\PagedResult.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\IUserRepository.cs" />
@@ -299,6 +300,7 @@
     <Content Include="Views\User\AjaxDemo.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="ai问答文档总结\" />
     <Folder Include="App_Data\" />
     <Folder Include="SqlHelper\" />
     <Folder Include="Views\Base\" />

@@ -18,6 +18,8 @@ namespace Ef6MvcDemo.Models
         [MaxLength(30)]
         public string Phone { get; set; }
 
+        public string AvatarPath { get; set; }
+
         public DateTime CreateTime { get; set; } = DateTime.Now;
     }
 }

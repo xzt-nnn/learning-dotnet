@@ -1,45 +1,172 @@
-﻿@model IEnumerable<Ef6MvcDemo.Models.User>
+﻿@model Ef6MvcDemo.Models.PagedResult<Ef6MvcDemo.Models.User>
 
 @{
     ViewBag.Title = "Index";
+
+    //分页窗口：只显示当前页前后各 2 页，避免页数多时渲染出上百个链接
+    int startPage = Math.Max(1, Model.PageIndex - 2);
+    int endPage = Math.Min(Model.TotalPages, Model.PageIndex + 2);
 }
 
 <h2>Index</h2>
 
+@if (TempData["Msg"] != null)
+{
+    <div class="alert alert-info">@TempData["Msg"]</div>
+}
+
 <p>
     @Html.ActionLink("Create New", "AddUser")
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.UserName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Phone)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CreateTime)
-        </th>
-        <th></th>
-    </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.UserName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Phone)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CreateTime)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "GetUser", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
-        </td>
-    </tr>
+@using (Html.BeginForm("Index", "User", FormMethod.Get, new { @class = "form-inline" }))
+{
+    <input type="text" name="keyword" value="@Model.Keyword" placeholder="输入用户名搜索" class="form-control" />
+    <input type="hidden" name="pageSize" value="@Model.PageSize" />
+    <button type="submit" class="btn btn-primary">搜索</button>
+
+    if (!string.IsNullOrEmpty(Model.Keyword))
+    {
+        @Html.ActionLink("清除", "Index", new { pageSize = Model.PageSize }, new { @class = "btn btn-default" })
+    }
 }
 
-</table>
+@*批量删除表单：复选框和按钮必须在同一个 form 内，否则点按钮不会提交任何数据*@
+@using (Html.BeginForm("BatchDelete", "User", FormMethod.Post, new { id = "batchForm" }))
+{
+    @Html.AntiForgeryToken()
+    <input type="hidden" name="page" value="@Model.PageIndex" />
+    <input type="hidden" name="pageSize" value="@Model.PageSize" />
+    <input type="hidden" name="keyword" value="@Model.Keyword" />
+
+    <button type="submit" class="btn btn-danger">批量删除</button>
+
+    <table class="table">
+        <tr>
+            <th><input type="checkbox" id="checkAll" /></th>
+            <th>用户名</th>
+            <th>电话</th>
+            <th>创建时间</th>
+            <th>操作</th>
+        </tr>
+
+        @if (Model.Items == null || Model.Items.Count == 0)
+        {
+            <tr>
+                <td colspan="5" style="text-align:center;">暂无数据</td>
+            </tr>
+        }
+        else
+        {
+            foreach (var item in Model.Items)
+            {
+                <tr>
+                    <td>
+
+                        <input type="checkbox" name="ids" value="@item.Id" class="row-check" />
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Phone)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CreateTime)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                        @Html.ActionLink("Details", "GetUser", new { id = item.Id }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                    </td>
+                </tr>
+            }
+        }
+
+    </table>
+}
+
+<div>
+    共 @Model.TotalCount 条，第 @Model.PageIndex / @Model.TotalPages 页，每页 @Model.PageSize 条
+</div>
+
+<ul class="pagination">
+    @if (Model.HasPrev)
+    {
+        <li>
+            @*`Html`：是 Razor 视图里内置的一个**`IHtmlHelper`类型的对象**，框架自动帮你实例化好，直接在页面用。*@
+            @Html.ActionLink("上一页", "Index", new { page = Model.PageIndex - 1, pageSize = Model.PageSize, keyword = Model.Keyword })
+        </li>
+    }
+    else
+    {
+        <li class="disabled"><span>上一页</span></li>
+    }
+
+    @if (startPage > 1)
+    {
+        <li>
+            @Html.ActionLink("1", "Index", new { page = 1, pageSize = Model.PageSize, keyword = Model.Keyword })
+        </li>
+        if (startPage > 2)
+        {
+            <li class="disabled"><span>...</span></li>
+        }
+    }
+
+    @for (int i = startPage; i <= endPage; i++)
+    {
+        if (i == Model.PageIndex)
+        {
+            <li class="active"><span>@i</span></li>
+        }
+        else
+        {
+            <li>
+                @Html.ActionLink(i.ToString(), "Index", new { page = i, pageSize = Model.PageSize, keyword = Model.Keyword })
+            </li>
+        }
+    }
+
+    @if (endPage < Model.TotalPages)
+    {
+        if (endPage < Model.TotalPages - 1)
+        {
+            <li class="disabled"><span>...</span></li>
+        }
+        <li>
+            @Html.ActionLink(Model.TotalPages.ToString(), "Index", new { page = Model.TotalPages, pageSize = Model.PageSize, keyword = Model.Keyword })
+        </li>
+    }
+
+    @if (Model.HasNext)
+    {
+        <li>
+            @Html.ActionLink("下一页", "Index", new { page = Model.PageIndex + 1, pageSize = Model.PageSize, keyword = Model.Keyword })
+        </li>
+    }
+    else
+    {
+        <li class="disabled"><span>下一页</span></li>
+    }
+</ul>
+
+@section scripts {
+    <script>
+        $(function () {
+            //全选 / 反选
+            $('#checkAll').click(function () {
+                $('.row-check').prop('checked', $(this).prop('checked'));
+            });
+
+            //提交前校验 + 二次确认
+            $('#batchForm').submit(function () {
+                if ($('.row-check:checked').length === 0) {
+                    alert('请至少选择一条记录');
+                    return false;
+                }
+                return confirm('确定删除选中的记录吗？删除后不可恢复');
+            });
+        });
+    </script>
+}

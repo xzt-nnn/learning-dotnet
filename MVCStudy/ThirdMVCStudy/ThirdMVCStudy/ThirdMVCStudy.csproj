@@ -136,6 +136,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="ai问答文档总结\" />
     <Folder Include="App_Data\" />
     <Folder Include="Upload\" />
   </ItemGroup>

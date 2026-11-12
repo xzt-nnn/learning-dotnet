@@ -82,7 +82,7 @@
     //MVC 的 JavaScriptSerializer 会把 DateTime 序列化成 \/Date(1699999999999)\/，这里转成可读格式
     function formatDate(value) {
         if (!value) return '';
-        var m = /\/Date$(\d+)$\//.exec(value);
+        var m = /\/Date\((\d+)\)\//.exec(value);
         if (m) {
             return new Date(parseInt(m[1], 10)).toLocaleString();
         }
