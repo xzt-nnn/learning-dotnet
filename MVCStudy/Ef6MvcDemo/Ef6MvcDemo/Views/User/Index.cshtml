@@ -24,6 +24,9 @@
     <input type="text" name="keyword" value="@Model.Keyword" placeholder="输入用户名搜索" class="form-control" />
     <input type="hidden" name="pageSize" value="@Model.PageSize" />
     <button type="submit" class="btn btn-primary">搜索</button>
+    <a href="@Url.Action("ExportCsv", "User", new { keyword = Model.Keyword })" class="btn btn-success">
+        导出 CSV
+    </a>
 
     if (!string.IsNullOrEmpty(Model.Keyword))
     {
@@ -153,20 +156,22 @@
 
 @section scripts {
     <script>
-        $(function () {
-            //全选 / 反选
-            $('#checkAll').click(function () {
-                $('.row-check').prop('checked', $(this).prop('checked'));
-            });
+                $(function () {
+                    //全选 / 反选
+                    $('#checkAll').click(function () {
+                        $('.row-check').prop('checked', $(this).prop('checked'));
+                    });
 
-            //提交前校验 + 二次确认
-            $('#batchForm').submit(function () {
-                if ($('.row-check:checked').length === 0) {
-                    alert('请至少选择一条记录');
-                    return false;
-                }
-                return confirm('确定删除选中的记录吗？删除后不可恢复');
-            });
-        });
+                    //提交前校验 + 二次确认
+                    $('#batchForm').submit(function () {
+                        if ($('.row-check:checked').length === 0) {
+                            alert('请至少选择一条记录');
+                            return false;
+                        }
+                        return confirm('确定删除选中的记录吗？删除后不可恢复');
+                    });
+                });
     </script>
 }
+
+

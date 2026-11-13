@@ -129,5 +129,25 @@ namespace Ef6MvcDemo.Repository
             await _db.SaveChangesAsync();
             return true;
         }
+
+        public async Task<List<User>> UserListForExportAsync(string keyword)
+        {
+            //关闭EF的实体追踪
+            IQueryable<User> query = _db.Users.AsNoTracking();
+            if (!string.IsNullOrWhiteSpace(keyword))
+            {
+                query = query.Where(u => u.UserName.Contains(keyword));
+            }
+            //到处不加 Skip/Take,但要排序，保证每次到处顺序一致
+            return await query.OrderBy(u => u.Id).ToListAsync();
+        }
+
+        //登录用：必须 Include(Role)，否则拿不到角色名，User.IsInRole 永远 false
+        public async Task<User> GetByUserNameAsync(string userName)
+        {
+            return await _db.Users
+                            .Include(u => u.Role)
+                            .FirstOrDefaultAsync(u => u.UserName == userName);
+        }
     }
 }

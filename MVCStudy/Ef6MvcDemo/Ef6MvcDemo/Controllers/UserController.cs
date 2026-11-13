@@ -12,6 +12,8 @@ using System.Web.Mvc;
 
 namespace Ef6MvcDemo.Controllers
 {
+    //未登录访问时自动跳转到 Web.config 里配置的 loginUrl
+    [Authorize]
     public class UserController : BaseController
     {
 
@@ -268,6 +270,16 @@ namespace Ef6MvcDemo.Controllers
             }
 
             return RedirectToAction("GetUser", new { id = id });
+        }
+
+        [HttpGet]
+        public async Task<ActionResult> ExportCsv(string keyword)
+        {
+            byte[] bytes = await _userService.ExportUserCsvAsync(keyword);
+
+            string fileName = "用户列表_" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".csv";
+
+            return File(bytes, "text/csv", fileName);
         }
 
         //AJAX 测试 2：查询列表

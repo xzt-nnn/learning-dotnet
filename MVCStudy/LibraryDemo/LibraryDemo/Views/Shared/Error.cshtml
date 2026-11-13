@@ -1,0 +1,26 @@
+﻿@model string
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>出错了</title>
+</head>
+<body>
+    <h1>出错了</h1>
+    <p>@Model</p>
+    <p><a href="/Books">返回图书列表</a></p>
+</body>
+</html>
+
+@*@if (HttpContext.Current.IsDebuggingEnabled)
+{
+    <p>@Model</p>
+}
+else
+{
+    <p>系统繁忙，请稍后再试。</p>
+}*@

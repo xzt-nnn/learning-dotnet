@@ -28,5 +28,10 @@ namespace Ef6MvcDemo.Repository
 
         Task<bool> UpdateAvatarAsync(int id, string avatarPath);
 
+        Task<List<User>> UserListForExportAsync(string keyword);
+
+        //按用户名查询（登录用），需要带出角色信息
+        Task<User> GetByUserNameAsync(string userName);
+
     }
 }

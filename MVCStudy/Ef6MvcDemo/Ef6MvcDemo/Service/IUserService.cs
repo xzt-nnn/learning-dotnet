@@ -28,5 +28,13 @@ namespace Ef6MvcDemo.Service
         Task<int> BatchDeleteAsync(List<int> ids);
 
         Task<string> UploadAvatarAsync(int id, Stream stream, string originalFileName, long contentLength, string saveDirectory);
+
+        Task<byte[]> ExportUserCsvAsync(string keyword);
+
+        //登录相关
+        Task<User> GetByUserNameAsync(string userName);
+        //校验通过返回用户，失败返回 null
+        Task<User> ValidateUserAsync(string userName, string password);
+
     }
 }

@@ -1,14 +1,17 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Principal;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using System.Web.Http;
+using System.Web.Security;
 using Autofac;
 using Autofac.Integration.Mvc;
 using Ef6MvcDemo.App_Start;
+using Ef6MvcDemo.Common;
 using Ef6MvcDemo.Models;
 using Ef6MvcDemo.Repository;
 using Ef6MvcDemo.Service;
@@ -40,6 +43,60 @@ namespace Ef6MvcDemo
             var container = builder.Build();
             //把 MVC 的依赖解析器换成 Autofac
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
+
+            //初始化管理员账号（表结构没建好时不影响站点启动）
+            try
+            {
+                SeedAdmin();
+            }
+            catch (Exception ex)
+            {
+                LogHelper.Error("初始化管理员账号失败", ex);
+            }
+        }
+
+        //Forms 认证默认只认"是否登录"，不认角色。
+        //这里从票据的 UserData 里取出登录时写入的角色名，重建 Principal，
+        //User.IsInRole("Admin") 和 [Authorize(Roles="Admin")] 才会生效
+        protected void Application_PostAuthenticateRequest(object sender, EventArgs e)
+        {
+            var cookie = Request.Cookies[FormsAuthentication.FormsCookieName];
+            if (cookie == null) return;
+
+            var ticket = FormsAuthentication.Decrypt(cookie.Value);
+            if (ticket == null) return;
+
+            string role = string.IsNullOrEmpty(ticket.UserData) ? "" : ticket.UserData;
+            var identity = new FormsIdentity(ticket);
+            HttpContext.Current.User = new GenericPrincipal(
+                identity,
+                role.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries));
+        }
+
+        private static void SeedAdmin()
+        {
+            using (var db = new MyDbContext())
+            {
+                if (db.Users.Any(u => u.UserName == "admin")) return;
+
+                var adminRole = db.Roles.FirstOrDefault(r => r.Name == "Admin");
+                if (adminRole == null)
+                {
+                    adminRole = new Role { Name = "Admin" };
+                    db.Roles.Add(adminRole);
+                }
+
+                db.Users.Add(new User
+                {
+                    UserName = "admin",
+                    Phone = "13800000000",
+                    CreateTime = DateTime.Now,
+                    Role = adminRole,
+                    //Crypto 是 System.Web.Helpers 里的，MVC 项目默认已引用
+                    PasswordHash = System.Web.Helpers.Crypto.HashPassword("123456")
+                });
+                db.SaveChanges();
+            }
         }
     }
 }

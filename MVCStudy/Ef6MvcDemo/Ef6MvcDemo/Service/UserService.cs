@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;
@@ -133,12 +134,16 @@ namespace Ef6MvcDemo.Service
                 Directory.CreateDirectory(saveDirectory);
             }
 
-            //3.
+            //3.生成新的文件名
             string fileName = Guid.NewGuid().ToString("N") + ext;
+            //获取保存图片的完整路径
             string fullPath = Path.Combine(saveDirectory, fileName);
 
+            //保存代码文件
+            //filestrean是文件流，用来本地磁盘文件的读写
             using (var fs=new FileStream(fullPath, FileMode.Create))
             {
+                //异步将文件流写到文件里
                 await stream.CopyToAsync(fs);
             }
 
@@ -158,6 +163,55 @@ namespace Ef6MvcDemo.Service
             return relativePath;
         }
 
+        public async Task<byte[]> ExportUserCsvAsync(string keyword)
+        {
+            var list = await _userRepo.UserListForExportAsync(keyword);
+
+            //MemoryStream内存流，数据全部写在服务器内存，不生成本地文件
+            using(var ms = new MemoryStream())
+            {
+                //UTF8Encoding才会写入BOM，Excel识别中文的关键
+                using(var writer = new StreamWriter(ms,new UTF8Encoding(true)))
+                {
+                    //写入csv表头（第一行），逗号分隔，对应表格列：Id,用户名、电话、创建时间、头像
+                    await writer.WriteLineAsync("Id,用户名,电话,创建时间,头像");
+
+                    foreach(var u in list)
+                    {
+                        await writer.WriteLineAsync(string.Join(",",
+                            u.Id,
+                            EscapeCsv(u.UserName),
+                            EscapeCsv(u.Phone),
+                            u.CreateTime.ToString("yyyy-MM-dd HH:mm:ss"),
+                            EscapeCsv(u.AvatarPath)
+                            ));
+                    }
+                }//dispose之后会flush，之后才能ToArray
+                //当witer的using快结束，自动调用Dispose-》自动Flush，把缓冲区所有文字全部刷净MemoryStream
+                return ms.ToArray();
+            }
+
+        }
+
+        //CSV 转义：含逗号/引号/换行时用双引号包起来，内部引号翻倍
+        private static string EscapeCsv(string value)
+        {
+            if (string.IsNullOrEmpty(value)) return "";
+
+            //防 CSV 注入：以 = + - @ 开头的值会被 Excel 当公式执行
+            if (value[0] == '=' || value[0] == '+' || value[0] == '-' || value[0] == '@')
+            {
+                value = "'" + value;
+            }
+
+            if (value.Contains(",") || value.Contains("\"") || value.Contains("\n") || value.Contains("\r"))
+            {
+                return "\"" + value.Replace("\"", "\"\"") + "\"";
+            }
+
+            return value;
+        }
+
         //========== 改造前（同步） ==========
         //public List<User> userList()
         //{
@@ -175,6 +229,28 @@ namespace Ef6MvcDemo.Service
         public async Task<PagedResult<User>> UserListPagedAsync(int pageIndex, int pageSize, string keyword)
         {
             return await _userRepo.UserListPagedAsync(pageIndex, pageSize, keyword);
+        }
+
+        public async Task<User> GetByUserNameAsync(string userName)
+        {
+            if (string.IsNullOrWhiteSpace(userName)) return null;
+            return await _userRepo.GetByUserNameAsync(userName.Trim());
+        }
+
+        //校验通过返回用户，失败返回 null；密码比对属于业务规则，放在这里
+        public async Task<User> ValidateUserAsync(string userName, string password)
+        {
+            if (string.IsNullOrWhiteSpace(userName) || string.IsNullOrEmpty(password))
+                return null;
+
+            var user = await _userRepo.GetByUserNameAsync(userName.Trim());
+
+            if (user == null || string.IsNullOrEmpty(user.PasswordHash))
+                return null;
+
+            return System.Web.Helpers.Crypto.VerifyHashedPassword(user.PasswordHash, password)
+                ? user
+                : null;
         }
 
 

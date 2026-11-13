@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "登录";
+}
+
+<h2>登录</h2>
+
+@using (Html.BeginForm("Login", "Account", new { returnUrl = ViewBag.ReturnUrl }, FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    <div class="form-group">
+        <label>用户名</label>
+        <input type="text" name="userName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>密码</label>
+        <input type="password" name="password" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">登录</button>
+}

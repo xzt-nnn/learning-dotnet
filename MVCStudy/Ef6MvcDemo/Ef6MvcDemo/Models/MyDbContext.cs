@@ -17,5 +17,7 @@ namespace Ef6MvcDemo.Models
         //DbSet<T> 对应数据库中的一张表
         public DbSet<User> Users { get; set; }
 
+        public DbSet<Role> Roles { get; set; }
+
     }
 }

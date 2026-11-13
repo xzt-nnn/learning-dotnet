@@ -1,0 +1,61 @@
+﻿@using LibraryDemo.ViewModels
+@model BookFormVm
+
+@{
+    ViewBag.Title = "新增图书";
+}
+
+<h2>新增图书</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    <div class="mb-3">
+        @Html.LabelFor(m => m.Isbn, new { @class = "form-label" })
+        @Html.TextBoxFor(m => m.Isbn, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Isbn, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="mb-3">
+        @Html.LabelFor(m => m.Title, new { @class = "form-label" })
+        @Html.TextBoxFor(m => m.Title, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Title, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="mb-3">
+        @Html.LabelFor(m => m.Author, new { @class = "form-label" })
+        @Html.TextBoxFor(m => m.Author, new { @class = "form-control" })
+    </div>
+
+    <div class="mb-3">
+        @Html.LabelFor(m => m.Publisher, new { @class = "form-label" })
+        @Html.TextBoxFor(m => m.Publisher, new { @class = "form-control" })
+    </div>
+
+    <div class="mb-3">
+        @Html.LabelFor(m => m.CategoryId, new { @class = "form-label" })
+        @Html.DropDownListFor(m => m.CategoryId, Model.Categories, "请选择分类", new { @class = "form-select" })
+        @Html.ValidationMessageFor(m => m.CategoryId, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="mb-3">
+        @Html.LabelFor(m => m.TotalCopies, new { @class = "form-label" })
+        @Html.TextBoxFor(m => m.TotalCopies, new { @class = "form-control", type = "number", min = "0" })
+        @Html.ValidationMessageFor(m => m.TotalCopies, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="mb-3">
+        @Html.LabelFor(m => m.Description, new { @class = "form-label" })
+        @Html.TextAreaFor(m => m.Description, new { @class = "form-control", rows = 4 })
+        @Html.ValidationMessageFor(m => m.Description, "", new { @class = "text-danger" })
+    </div>
+
+    <button type="submit" class="btn btn-primary">保存</button>
+    @Html.ActionLink("返回列表", "Index", null, new { @class = "btn btn-secondary" })
+}
+
+@section scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

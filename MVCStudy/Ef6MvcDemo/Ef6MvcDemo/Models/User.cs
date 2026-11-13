@@ -20,6 +20,12 @@ namespace Ef6MvcDemo.Models
 
         public string AvatarPath { get; set; }
 
+
+        //User 里追加
+        public int? RoleId { get; set; }
+        public string PasswordHash { get; set; }
+        public virtual Role Role { get; set; }
+
         public DateTime CreateTime { get; set; } = DateTime.Now;
     }
 }
