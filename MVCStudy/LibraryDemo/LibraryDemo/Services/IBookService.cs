@@ -22,5 +22,7 @@ namespace LibraryDemo.Services
         /// <returns>true=已经存在，false=不存在</returns>
         bool IsbnExists(string isbn, int excludeId = 0);  // 注意多了 excludeId
         void Update(Book input);
+
+        void Delete(int id);
     }
 }

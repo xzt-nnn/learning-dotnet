@@ -33,6 +33,10 @@ namespace LibraryDemo.App_Start
                 .As<ICategoryService>()
                 .InstancePerRequest();
 
+            builder.RegisterType<BorrowService>()
+                .As<IBorrowService>()
+                .InstancePerRequest();
+
             //4.过滤器
             builder.RegisterFilterProvider();
 

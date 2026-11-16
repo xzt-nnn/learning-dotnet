@@ -9,6 +9,10 @@ namespace LibraryDemo.Models
         public DbSet<Category> Categories { get; set; }
         public DbSet<Book> Books { get; set; }
 
+        public DbSet<Reader> Readers { get; set; }
+
+        public DbSet<BorrowRecord> BorrowRecords { get; set; }
+
         //EF6的Fluent API配置，用来告诉EF：Book和Category这两张表是什么关系
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -17,6 +21,19 @@ namespace LibraryDemo.Models
                 .WithMany(c => c.Books)  //Categoty对应多本书
                 .HasForeignKey(b => b.CategoryId) //CategoryId是外键列
                 .WillCascadeOnDelete(false); //删除CateGory时不级联删除Book
+
+            modelBuilder.Entity<BorrowRecord>()
+                .HasRequired(r => r.Book)
+                .WithMany()
+                .HasForeignKey(r => r.BookId)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<BorrowRecord>()
+                .HasRequired(r => r.Reader)
+                .WithMany()
+                .HasForeignKey(r => r.ReaderId)
+                .WillCascadeOnDelete(false);
+
 
             base.OnModelCreating(modelBuilder);
         }

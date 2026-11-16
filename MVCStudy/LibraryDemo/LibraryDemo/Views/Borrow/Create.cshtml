@@ -1,0 +1,48 @@
+﻿@using LibraryDemo.ViewModels
+@model BorrowFormVm
+<!--告诉这个视图：这个页面绑定的模型类型是BorrowFormVm-->
+
+@{
+    ViewBag.Title = "借阅图书";
+}
+
+<h2>借阅图书</h2>
+
+<div class="card mb-3">
+    <div class="card-body">
+        <dl class="row mb-0">
+            <dt class="col-sm-3">书名</dt>
+            <dd class="col-sm-9">@Model.BookTitle</dd>
+
+            <dt class="col-sm-3">ISBN</dt>
+            <dd class="col-sm-9">@Model.BookIsbn</dd>
+
+            <dt class="col-sm-3">可借 / 总量</dt>
+            <dd class="col-sm-9">@Model.AvailableCopies / @Model.TotalCopies</dd>
+        </dl>
+    </div>
+</div>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(m => m.BookId)
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+<div class="mb-3">
+    <!--生成 `<label>` 标签，自动读取 ViewModel 上 
+        [Display]特性的显示文字，for属性自动绑定ReaderId输入框id。-->
+    @Html.LabelFor(m => m.ReaderId, new { @class = "form-label" })
+    @Html.DropDownListFor(m => m.ReaderId, Model.Readers, "请选择读者", new { @class = "form-select" })
+    @Html.ValidationMessageFor(m => m.ReaderId, "", new { @class = "text-danger" })
+</div>
+
+    <p class="text-muted">借期 30 天，同一读者最多同时借 3 本，有逾期未还时不能借阅。</p>
+
+    <button type="submit" class="btn btn-primary">确认借阅</button>
+    @Html.ActionLink("返回列表", "Index", "Books", null, new { @class = "btn btn-secondary" })
+}
+
+@section scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

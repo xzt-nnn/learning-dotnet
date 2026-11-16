@@ -1,3 +1,6 @@
 <Solution>
-  <Project Path="LibraryDemo/LibraryDemo.csproj" />
+  <Folder Name="/sql/">
+    <File Path="../../../SQL Server学习/图书demo.sql" />
+  </Folder>
+  <Project Path="LibraryDemo/LibraryDemo.csproj" Id="bed3fcb4-6f01-42bd-affb-5252ae3aaabb" />
 </Solution>

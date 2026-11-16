@@ -1,4 +1,4 @@
-﻿using LibraryDemo.Models;
+﻿﻿using LibraryDemo.Models;
 using LibraryDemo.Services;
 using LibraryDemo.ViewModels;
 using System;
@@ -112,6 +112,90 @@ namespace LibraryDemo.Controllers
             });
 
             TempData["Success"] = "新增图书成功";
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult Edit(int id)
+        {
+            var book = _bookService.GetById(id);
+            if (book == null) return HttpNotFound();
+
+            return View(new BookFormVm
+            {
+                Id = book.Id,
+                Isbn = book.Isbn,
+                Title = book.Title,
+                Author = book.Author,
+                Publisher = book.Publisher,
+                CategoryId = book.CategoryId,
+                TotalCopies = book.TotalCopies,
+                Description = book.Description,
+                Categories = BuildCategories(book.CategoryId)
+            });
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(int id,BookFormVm vm)
+        {
+            if (id != vm.Id) return new HttpStatusCodeResult(400);
+
+            var book = _bookService.GetById(id);
+            if (book == null) return HttpNotFound();
+
+            if (ModelState.IsValid && _bookService.IsbnExists(vm.Isbn, vm.Id))
+            {
+                ModelState.AddModelError("Isbn", "该ISbn已经存在");
+            }
+
+            if (!ModelState.IsValid)
+            {
+                vm.Categories = BuildCategories(vm.CategoryId);
+                return View(vm);
+            }
+
+            try
+            {
+                // 手动映射：只传允许修改的字段
+                // AvailableCopies 由 Service 内部按"总量 - 已借出"重新计算
+                _bookService.Update(new Book
+                {
+                    Id = vm.Id,
+                    Isbn = vm.Isbn.Trim(),
+                    Title = vm.Title.Trim(),
+                    Author = vm.Author?.Trim(),
+                    Publisher = vm.Publisher?.Trim(),
+                    CategoryId = vm.CategoryId,
+                    TotalCopies = vm.TotalCopies,
+                    Description = vm.Description?.Trim()
+                });
+
+                TempData["Success"] = "修改图书成功";
+                return RedirectToAction("Index");
+            }
+            catch (InvalidOperationException ex)
+            {
+                // Service 里可能抛："图书不存在" 或 "馆藏总量不能小于已借出数量"
+                ModelState.AddModelError(string.Empty, ex.Message);
+                vm.Categories = BuildCategories(vm.CategoryId);
+                return View(vm);
+            }
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Delete(int id)
+        {
+            try
+            {
+                _bookService.Delete(id);
+                TempData["Success"] = "删除成功";
+            }
+            catch (InvalidOperationException ex)
+            {
+                TempData["Error"] = ex.Message;
+            }
+
             return RedirectToAction("Index");
         }
 

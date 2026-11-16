@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -92,12 +92,45 @@ namespace LibraryDemo.Services
 
         public bool IsbnExists(string isbn, int excludeId = 0)
         {
-            
+            if (string.IsNullOrWhiteSpace(isbn)) return false;
+
+            var normalized = isbn.Trim();
+            return _db.Books.Any(b => b.Isbn == normalized && b.Id != excludeId);
         }
 
         public void Update(Book input)
         {
-            throw new NotImplementedException();
+            var book = _db.Books.FirstOrDefault(b => b.Id == input.Id);
+            if (book == null) throw new InvalidOperationException("图书不存在");
+
+            var borrowed = book.TotalCopies - book.AvailableCopies;
+            if (input.TotalCopies < borrowed)
+            {
+                throw new InvalidOperationException("以借出"+borrowed+"本，馆藏总量不能小于"+borrowed);
+            }
+            book.Isbn = input.Isbn;
+            book.Title = input.Title;
+            book.Author = input.Author;
+            book.Publisher = input.Publisher;
+            book.CategoryId = input.CategoryId;
+            book.Description = input.Description;
+            book.TotalCopies = input.TotalCopies;
+            book.AvailableCopies = input.TotalCopies - borrowed;
+
+            _db.SaveChanges();
         }
+
+        public void Delete(int id)
+        {
+            var book = _db.Books.FirstOrDefault(b => b.Id == id);
+            if (book == null)
+                throw new InvalidOperationException("该突出不存在");
+            if (book.AvailableCopies < book.TotalCopies)
+                throw new InvalidOperationException("该图书还有为归还的副本，无法删除");
+
+            _db.Books.Remove(book);
+            _db.SaveChanges();
+        }
+
     }
 }

@@ -164,21 +164,27 @@
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\BooksController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\BorrowController.cs" />
     <Compile Include="Exception\BusinessException.cs" />
     <Compile Include="Filters\GlobalExceptionFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Book.cs" />
+    <Compile Include="Models\BorrowRecord.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\LibraryContext.cs" />
+    <Compile Include="Models\Reader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\BookService.cs" />
+    <Compile Include="Services\BorrowService.cs" />
     <Compile Include="Services\CategoryService.cs" />
     <Compile Include="Services\IBookService.cs" />
+    <Compile Include="Services\IBorrowService.cs" />
     <Compile Include="Services\ICategoryService.cs" />
     <Compile Include="ViewModels\BookFormVm.cs" />
     <Compile Include="ViewModels\BookIndexVm.cs" />
+    <Compile Include="ViewModels\BorrowFormVm.cs" />
     <Compile Include="ViewModels\BookListItemVm.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -237,11 +243,15 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Books\Index.cshtml" />
     <Content Include="Views\Books\Create.cshtml" />
+    <Content Include="Views\Books\Edit.cshtml" />
+    <Content Include="Views\Borrow\Create.cshtml" />
+    <Content Include="Views\Borrow\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ai问答文档\" />
     <Folder Include="App_Data\" />
     <Folder Include="Views\Base\" />
+    <Folder Include="Views\Borrow\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

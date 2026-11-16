@@ -15,11 +15,25 @@
     <div id="successAlert" class="alert alert-success fade show">@TempData["Success"]</div>
 
     <script>
-        // 2 秒后淡出并移除提示
+                        // 2 秒后淡出并移除提示
+                        setTimeout(function () {
+                            var alertEl = document.getElementById('successAlert');
+                            if (!alertEl) return;
+                            alertEl.classList.remove('show');   // 触发 Bootstrap 的淡出动画
+                            setTimeout(function () { alertEl.remove(); }, 200);
+                        }, 2000);
+    </script>
+}
+
+@if (TempData["Error"] != null)
+{
+    <div id="errorAlert" class="alert alert-danger fade show">@TempData["Error"]</div>
+
+    <script>
         setTimeout(function () {
-            var alertEl = document.getElementById('successAlert');
+            var alertEl = document.getElementById('errorAlert');
             if (!alertEl) return;
-            alertEl.classList.remove('show');   // 触发 Bootstrap 的淡出动画
+            alertEl.classList.remove('show');
             setTimeout(function () { alertEl.remove(); }, 200);
         }, 2000);
     </script>
@@ -50,13 +64,14 @@
             <th>分类</th>
             <th>出版社</th>
             <th>可借 / 总量</th>
+            <th>操作</th>
         </tr>
     </thead>
     <tbody>
         @if (Model.Items.Count == 0)
         {
             <tr>
-                <td colspan="6" class="text-center text-muted">没有找到符合条件的图书</td>
+                <td colspan="7" class="text-center text-muted">没有找到符合条件的图书</td>
             </tr>
         }
         else
@@ -70,6 +85,21 @@
                     <td>@item.CategoryName</td>
                     <td>@item.Publisher</td>
                     <td>@item.AvailableCopies / @item.TotalCopies</td>
+                    <td>
+                        @if (item.AvailableCopies > 0)
+                        {
+                            @Html.ActionLink("借阅", "Create", "Borrow", new { bookId = item.Id },
+                           new { @class = "btn btn-sm btn-outline-success" })
+                        }
+                        @Html.ActionLink("编辑", "Edit", new { id = item.Id }, new { @class = "btn btn-sm btn-outline-primary" })
+
+                        @using (Html.BeginForm("Delete", "Books", new { id = item.Id }, FormMethod.Post,
+                            new { @class = "d-inline", onsubmit = "return confirm('确定删除这本图书吗？');" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            <button type="submit" class="btn btn-sm btn-outline-danger">删除</button>
+                        }
+                    </td>
                 </tr>
             }
         }
